@@ -1,0 +1,40 @@
+header{
+  height: 65vh;
+  position: relative;
+  .img{
+    background-image: url("../Graphics/Cover.jpg");
+  }
+  center{
+    h1{
+      font-size: 4em;
+      margin-bottom: 5px;
+      color: $gray;
+    }
+    p{
+      color: $light-blue;
+      font-size: 1.2em;
+      strong{
+        font-size: 1.1em;
+        color: $light-blue;
+      }
+    }
+    .btn{
+      color: $white;
+      &:hover{
+        color: $light-blue;
+      }
+    }
+    .btn:first-of-type{
+      border-color: $white;
+    }
+    .btn:nth-of-type(2){
+      background-color: $blue;
+      border-color: $blue;
+      margin-left: 5px;
+    }
+  }
+}
+
+.short{
+  height: 40vh;
+}

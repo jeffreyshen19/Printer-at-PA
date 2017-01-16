@@ -1,0 +1,65 @@
+doctype html
+html(lang = "en")
+  head
+    meta(charset = "utf-8")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+
+    title Andover DTG Printing
+
+    link(href="/bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css")
+    link(href="/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css")
+    link(href="/bower_components/sweetalert/dist/sweetalert.css" rel="stylesheet" type="text/css")
+    link(href="dist/CSS/main.css" rel="stylesheet" type="text/css")
+
+    script(src="/bower_components/jquery/dist/jquery.min.js")
+    script(src="/bower_components/bootstrap/dist/js/bootstrap.min.js")
+    script(src="/bower_components/sweetalert/dist/sweetalert.min.js")
+
+    block vars
+      -var short = false;
+  body
+    #wrapper.container-fluid
+      .absolute
+        nav.row
+          .col-xs-1.left
+            a(href = "/")
+              i.fa.fa-home
+          .col-xs-11.right
+            a(href = "/#about") About
+            a(href = "/#pricing") Pricing
+            a(href = "/reserve") Reserve a Time
+            //a(href = "/resources") Resources
+            //a(href = "/archive") Past Designs
+            a(href = "#chat" onclick = "toggleChat()") Live Chat
+      if short
+        header.short
+          .overlay
+          .img
+          center
+            block header
+      else
+        header
+          .overlay
+          .img
+          center
+            block header
+      #body
+        block content
+      footer.row
+        .col-xs-9.left
+          p The Printer is made possible through a grant from the Abbot Academy Association.
+        .col-xs-3.right
+          a(href = "mailto:laaron@andover.edu") Contact Us
+    block scripts
+    script(src = "dist/JS/main.min.js")
+    script(type = "text/javascript").
+      var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+      (function(){
+        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+        s1.async=true;
+        s1.src='https://embed.tawk.to/56e4952c0d20423b7d4fa682/default';
+        s1.charset='UTF-8';
+        s1.setAttribute('crossorigin','*');
+        s0.parentNode.insertBefore(s1,s0);
+      })();

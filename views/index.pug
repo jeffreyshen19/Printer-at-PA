@@ -1,0 +1,82 @@
+extends layout
+
+block header
+  h1 Got Shirts?
+  p Design and print custom t-shirts&nbsp;
+    strong at Phillips Academy
+  br
+  a.btn(href = "#about") Whoa. Tell me more
+  a.btn(href = "#getstarted") Get Started
+
+block content
+  .box#about
+    h2 About
+    p
+      | We have a Direct-to-Garment printer (fancy words for a t-shirt printer) that has been brought to Andover for you to use. It prints custom designs onto items like t-shirts, sweatshirts, and even towels and tote bags.
+      br
+      br
+      |The purpose of the Printer is to provide students with a cheaper, faster, and easier method to print custom items. Any Andover student knows that CustomInk is often prohibitively expensive and takes two weeks to process an order. The Printer takes the guessing out of the game and allows students to print a range of 1 shirt to 60 shirts at any given time for less money. If your club or team gains a new member, you can always return to the Printer and print another one in under five minutes.
+      br
+      br
+      strong Anyone can use the printer.&nbsp;
+      | If you don't know how to use it, just&nbsp;
+      a(href = "mailto:laaron@andover.edu") ask us
+      | &nbsp;and we'll explain the simple process in 5-10 minutes, or&nbsp;
+      a(href = "/learn") checkout out our resources
+      | . We also work with the Graphic Design Club to create aesthetic designs for your apparel.
+    br
+    br
+    h3 Why Us?
+    ul
+      li Faster: With 150-second print-times, you can be in and out with brand new shirts in minutes.
+      li Cheaper: We guarantee $50 savings over Customink for orders of 60 or less.
+      li Easier: Located in the basement of the library and managed by classmates, the Printer allows for great flexibility. Never worry about ordering just the right number of items, as you can always print more. Payment is carried out by Bluecard.
+  .box#getstarted
+    h2 Getting Started
+    p Need Shirts? Here's how:
+    br
+    ol
+      li
+        strong Learn to use the printer.&nbsp;
+        a(href = "mailto:laaron@andover.edu") Contact us
+        | &nbsp; and we will set up a 5-10 minute training session at a convenient time. We also offer group training.
+      li
+        strong Design.&nbsp;
+        | If you already have a shirt design, all that's left is to choose your shirt type. We always have a great selection of t-shirts, sweatshirts, and long-sleeves in stock. If you want a special item, we’ll order it and have it for you quickly at wholesale prices.&nbsp;
+        a(href = "/resources") Check out our resources&nbsp;
+        | or&nbsp;
+        a(href = "/archive") check out past designs
+        | .
+      li
+        strong Reserve a time.&nbsp;
+        | Once trained to use the printer, you can&nbsp;
+        a(href = "/reserve") reserve a time
+        | &nbsp;on our website and use it whenever you want.
+      li
+        strong Print!&nbsp;
+        | At the scheduled time, go to the library desk to pick up a key to the Printing Room (The printing room is in the basement of the library and has a nice, noticeable sign on it). Each shirt takes about 2 mins. If you don't feel comfortable printing yourself, you may request printing. We are sometimes are to help with smaller orders (typically under twenty).&nbsp;
+        a(href = "mailto:laaron@andover.edu") Contact us
+        | &nbsp;to learn more. Don't take your apparel yet, you still need to pay!
+      li
+        strong Pay.&nbsp;
+        | When finished, contact us to pay with Bluecard. Once you've paid, you can take your apparel.
+  .box#pricing
+    h2 Pricing
+    p
+      strong We guarantee at least $50 savings&nbsp;
+      | over CustomInk for orders of 60 or less. Pricing subject to change based. If you want a more precise cost estimate,&nbsp;
+      a(href = "mailto:laaron@andover.edu") contact us
+      | .
+    br
+    ul
+      li T-Shirt: $9
+      li Longsleeve: $12
+      li Sweatshirt: $15
+      li Athletic Longsleeves: $13
+  .box.banner
+    .overlay
+    .img
+    center
+      h2 Ready?
+      a.btn(href = "/resources") Learn how to print
+      a.btn(href = "/reserve") Reservve a timed

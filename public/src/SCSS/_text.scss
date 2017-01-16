@@ -1,0 +1,60 @@
+@font-face {
+  font-family: montserrat;
+  src: url("../../Fonts/montserrat/Montserrat-Regular.ttf");
+}
+
+@font-face {
+  font-family: domine;
+  src: url("../../Fonts/domine/Domine-Regular.ttf");
+}
+
+@font-face {
+  font-family: dominebold;
+  src: url("../../Fonts/domine/Domine-Bold.ttf");
+}
+
+@font-face {
+  font-family: roboto;
+  src: url("../../Fonts/roboto/RobotoSlab-Regular.ttf");
+}
+
+@font-face {
+  font-family: robotobold;
+  src: url("../../Fonts/roboto/RobotoSlab-Bold.ttf");
+}
+
+$black: #454552;
+$light-black: #5d5d5d;
+$gray: #BFBFBF;
+$light-blue: #d8e9ef;
+$blue: #4ea1d3;
+$red: #e85a71;
+$white: #F2F1EF;
+
+h1, h2, h3, h4, h5, h6{
+  font-family: montserrat;
+  color: $black;
+}
+
+p, span, ul, li{
+  font-family: roboto;
+  color: $light-black;
+  line-height: 1.1em;
+}
+
+strong{
+  font-family: robotobold;
+  color: $black;
+}
+
+.btn{
+  font-family: montserrat;
+  padding: 10px 15px 10px 15px;
+  border-width: 1px;
+  border-radius: 5px;
+  border-style: solid;
+}
+
+a{
+  transition: 0.2s all;
+}

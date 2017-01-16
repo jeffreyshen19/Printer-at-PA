@@ -1,0 +1,497 @@
+/* line 1, ../../src/SCSS/_reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 22, ../../src/SCSS/_reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 26, ../../src/SCSS/_reset.scss */
+body {
+  line-height: 1;
+}
+
+/* line 29, ../../src/SCSS/_reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 32, ../../src/SCSS/_reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 35, ../../src/SCSS/_reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 40, ../../src/SCSS/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 44, ../../src/SCSS/_reset.scss */
+.container-fluid {
+  padding: 0;
+}
+
+/* line 47, ../../src/SCSS/_reset.scss */
+a:visited, a:focus {
+  color: inherit;
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: montserrat;
+  src: url("../../Fonts/montserrat/Montserrat-Regular.ttf");
+}
+@font-face {
+  font-family: domine;
+  src: url("../../Fonts/domine/Domine-Regular.ttf");
+}
+@font-face {
+  font-family: dominebold;
+  src: url("../../Fonts/domine/Domine-Bold.ttf");
+}
+@font-face {
+  font-family: roboto;
+  src: url("../../Fonts/roboto/RobotoSlab-Regular.ttf");
+}
+@font-face {
+  font-family: robotobold;
+  src: url("../../Fonts/roboto/RobotoSlab-Bold.ttf");
+}
+/* line 34, ../../src/SCSS/_text.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: montserrat;
+  color: #454552;
+}
+
+/* line 39, ../../src/SCSS/_text.scss */
+p, span, ul, li {
+  font-family: roboto;
+  color: #5d5d5d;
+  line-height: 1.1em;
+}
+
+/* line 45, ../../src/SCSS/_text.scss */
+strong {
+  font-family: robotobold;
+  color: #454552;
+}
+
+/* line 50, ../../src/SCSS/_text.scss */
+.btn {
+  font-family: montserrat;
+  padding: 10px 15px 10px 15px;
+  border-width: 1px;
+  border-radius: 5px;
+  border-style: solid;
+}
+
+/* line 58, ../../src/SCSS/_text.scss */
+a {
+  transition: 0.2s all;
+}
+
+/* line 1, ../../src/SCSS/_nav.scss */
+nav {
+  padding: 20px 25px 20px 25px;
+  z-index: 100;
+}
+/* line 3, ../../src/SCSS/_nav.scss */
+nav a {
+  color: #F2F1EF;
+}
+/* line 5, ../../src/SCSS/_nav.scss */
+nav a:visited, nav a:focus {
+  color: #F2F1EF;
+  text-decoration: none;
+}
+/* line 9, ../../src/SCSS/_nav.scss */
+nav a:hover {
+  text-decoration: none;
+  color: #d8e9ef;
+}
+/* line 15, ../../src/SCSS/_nav.scss */
+nav .right a {
+  font-family: montserrat;
+}
+
+/* line 22, ../../src/SCSS/_nav.scss */
+.absolute {
+  width: 100vw;
+  top: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  z-index: 100;
+}
+
+/* line 1, ../../src/SCSS/_header.scss */
+header {
+  height: 65vh;
+  position: relative;
+}
+/* line 4, ../../src/SCSS/_header.scss */
+header .img {
+  background-image: url("../Graphics/Cover.jpg");
+}
+/* line 8, ../../src/SCSS/_header.scss */
+header center h1 {
+  font-size: 4em;
+  margin-bottom: 5px;
+  color: #BFBFBF;
+}
+/* line 13, ../../src/SCSS/_header.scss */
+header center p {
+  color: #d8e9ef;
+  font-size: 1.2em;
+}
+/* line 16, ../../src/SCSS/_header.scss */
+header center p strong {
+  font-size: 1.1em;
+  color: #d8e9ef;
+}
+/* line 21, ../../src/SCSS/_header.scss */
+header center .btn {
+  color: #F2F1EF;
+}
+/* line 23, ../../src/SCSS/_header.scss */
+header center .btn:hover {
+  color: #d8e9ef;
+}
+/* line 27, ../../src/SCSS/_header.scss */
+header center .btn:first-of-type {
+  border-color: #F2F1EF;
+}
+/* line 30, ../../src/SCSS/_header.scss */
+header center .btn:nth-of-type(2) {
+  background-color: #4ea1d3;
+  border-color: #4ea1d3;
+  margin-left: 5px;
+}
+
+/* line 38, ../../src/SCSS/_header.scss */
+.short {
+  height: 40vh;
+}
+
+/* line 1, ../../src/SCSS/_body.scss */
+center {
+  top: 50%;
+  transform: translateY(-50%);
+  position: relative;
+  z-index: 80;
+}
+
+/* line 8, ../../src/SCSS/_body.scss */
+.overlay {
+  opacity: 0.7;
+  z-index: 50;
+  background-color: #454552;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 19, ../../src/SCSS/_body.scss */
+.img {
+  z-index: 25;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 31, ../../src/SCSS/_body.scss */
+.right {
+  text-align: right;
+}
+/* line 33, ../../src/SCSS/_body.scss */
+.right a {
+  margin-left: 10px;
+}
+
+/* line 38, ../../src/SCSS/_body.scss */
+#calendar {
+  width: 80%;
+  margin: 0 auto;
+}
+/* line 41, ../../src/SCSS/_body.scss */
+#calendar .month {
+  padding: 50px;
+  width: 100%;
+  background-color: #81CFE0;
+}
+/* line 45, ../../src/SCSS/_body.scss */
+#calendar .month p {
+  color: white;
+  font-family: montserrat;
+  font-size: 1.5em;
+}
+/* line 49, ../../src/SCSS/_body.scss */
+#calendar .month p span {
+  color: inherit;
+  font-family: inherit;
+}
+/* line 54, ../../src/SCSS/_body.scss */
+#calendar .month a {
+  color: white;
+  font-family: montserrat;
+  margin-left: 10px;
+}
+/* line 59, ../../src/SCSS/_body.scss */
+#calendar .month .left, #calendar .month .right {
+  display: inline-block;
+}
+/* line 64, ../../src/SCSS/_body.scss */
+#calendar .month .right {
+  text-align: right;
+  float: right;
+}
+/* line 69, ../../src/SCSS/_body.scss */
+#calendar .weekdays {
+  margin: 0;
+  border: none;
+}
+/* line 71, ../../src/SCSS/_body.scss */
+#calendar .weekdays li {
+  color: #666666;
+  background-color: #dddddd;
+  border: none;
+}
+/* line 76, ../../src/SCSS/_body.scss */
+#calendar .weekdays .small {
+  border: none;
+}
+/* line 81, ../../src/SCSS/_body.scss */
+#calendar ul {
+  background-color: white;
+  border-bottom: 1px solid #dddddd;
+}
+/* line 82, ../../src/SCSS/_body.scss */
+#calendar ul li {
+  display: inline-block;
+  width: 13.2857%;
+  text-align: center;
+  font-family: montserrat;
+  font-size: 1em;
+  padding: 10px 0;
+  border-right: 1px solid #dddddd;
+}
+/* line 91, ../../src/SCSS/_body.scss */
+#calendar ul .small {
+  width: 7%;
+  text-align: center;
+  padding-left: 2px;
+  padding-right: 2px;
+  border-left: 1px solid #dddddd;
+  cursor: auto;
+}
+/* line 102, ../../src/SCSS/_body.scss */
+#calendar .times {
+  cursor: pointer;
+}
+/* line 104, ../../src/SCSS/_body.scss */
+#calendar .times li {
+  transition: 0.2s all;
+}
+/* line 106, ../../src/SCSS/_body.scss */
+#calendar .times li:hover {
+  background-color: #d8e9ef;
+}
+/* line 111, ../../src/SCSS/_body.scss */
+#calendar .times .small:hover {
+  background-color: inherit;
+}
+/* line 115, ../../src/SCSS/_body.scss */
+#calendar .times .filled {
+  background-color: #81CFE0;
+  cursor: auto;
+  color: #F2F1EF;
+}
+/* line 119, ../../src/SCSS/_body.scss */
+#calendar .times .filled:hover {
+  background-color: #81CFE0;
+}
+
+/* line 126, ../../src/SCSS/_body.scss */
+.popup {
+  padding: 2em 1.5em;
+}
+/* line 128, ../../src/SCSS/_body.scss */
+.popup h1, .popup h2, .popup h3, .popup p, .popup input {
+  margin: 0;
+}
+/* line 131, ../../src/SCSS/_body.scss */
+.popup p {
+  margin: 5px 0 15px;
+}
+/* line 134, ../../src/SCSS/_body.scss */
+.popup input {
+  margin-bottom: 10px;
+}
+/* line 137, ../../src/SCSS/_body.scss */
+.popup .sa-input-error.show {
+  opacity: 0;
+  display: none;
+}
+
+/* line 144, ../../src/SCSS/_body.scss */
+#body .box {
+  padding: 3em 5em 3em 5em;
+}
+/* line 146, ../../src/SCSS/_body.scss */
+#body .box h2 {
+  font-size: 2em;
+  margin-bottom: 5px;
+}
+/* line 150, ../../src/SCSS/_body.scss */
+#body .box h3 {
+  font-size: 1.5em;
+  margin-bottom: 5px;
+}
+/* line 154, ../../src/SCSS/_body.scss */
+#body .box:nth-of-type(odd) {
+  text-align: left;
+}
+/* line 157, ../../src/SCSS/_body.scss */
+#body .box:nth-of-type(even) {
+  text-align: right;
+  background-color: #F2F1EF;
+}
+/* line 161, ../../src/SCSS/_body.scss */
+#body .box ol, #body .box ul {
+  text-align: left;
+}
+/* line 163, ../../src/SCSS/_body.scss */
+#body .box ol li, #body .box ul li {
+  font-family: montserrat;
+  margin-bottom: 10px;
+}
+/* line 166, ../../src/SCSS/_body.scss */
+#body .box ol li a, #body .box ul li a {
+  color: #4ea1d3;
+}
+/* line 171, ../../src/SCSS/_body.scss */
+#body .box ol {
+  list-style-type: decimal;
+  width: 60%;
+  margin: 0 auto;
+}
+/* line 176, ../../src/SCSS/_body.scss */
+#body .box ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+/* line 182, ../../src/SCSS/_body.scss */
+#body .center:nth-of-type(odd) {
+  text-align: center;
+}
+/* line 185, ../../src/SCSS/_body.scss */
+#body .center:nth-of-type(even) {
+  text-align: center;
+}
+/* line 189, ../../src/SCSS/_body.scss */
+#body .banner {
+  text-align: center;
+  position: relative;
+  height: 250px;
+  padding: 0.5em;
+}
+/* line 193, ../../src/SCSS/_body.scss */
+#body .banner h2 {
+  color: #BFBFBF;
+  padding-bottom: 5px;
+}
+/* line 197, ../../src/SCSS/_body.scss */
+#body .banner .img {
+  background-image: url("../Graphics/fabric.jpg");
+}
+/* line 200, ../../src/SCSS/_body.scss */
+#body .banner .btn {
+  color: #F2F1EF;
+}
+/* line 202, ../../src/SCSS/_body.scss */
+#body .banner .btn:hover {
+  color: #d8e9ef;
+}
+/* line 206, ../../src/SCSS/_body.scss */
+#body .banner .btn:first-of-type {
+  border-color: #F2F1EF;
+}
+/* line 209, ../../src/SCSS/_body.scss */
+#body .banner .btn:nth-of-type(2) {
+  background-color: #4ea1d3;
+  border-color: #4ea1d3;
+  margin-left: 5px;
+}
+
+@media screen and (max-width: 700px) {
+  /* line 222, ../../src/SCSS/_body.scss */
+  #body .box ol {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 500px) {
+  /* line 232, ../../src/SCSS/_body.scss */
+  #body .box ol {
+    width: 95%;
+  }
+}
+/* line 1, ../../src/SCSS/_footer.scss */
+footer {
+  padding: 25px 25px 50px 25px;
+  box-sizing: border-box;
+  width: 100vw;
+}
+/* line 2, ../../src/SCSS/_footer.scss */
+footer p, footer a {
+  font-family: montserrat;
+}
+/* line 5, ../../src/SCSS/_footer.scss */
+footer a {
+  color: #454552;
+}
+/* line 7, ../../src/SCSS/_footer.scss */
+footer a:visited, footer a:focus {
+  color: #454552;
+  text-decoration: none;
+}
+/* line 11, ../../src/SCSS/_footer.scss */
+footer a:hover {
+  text-decoration: none;
+  color: #4ea1d3;
+}

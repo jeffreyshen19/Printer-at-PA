@@ -1,0 +1,237 @@
+center{
+  top: 50%;
+  transform: translateY(-50%);
+  position: relative;
+  z-index: 80;
+}
+
+.overlay{
+  opacity: 0.7;
+  z-index: 50;
+  background-color: $black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.img{
+  z-index: 25;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.right{
+  text-align: right;
+  a{
+    margin-left: 10px;
+  }
+}
+
+#calendar{
+  width: 80%;
+  margin: 0 auto;
+  .month{
+    padding: 50px;
+    width: 100%;
+    background-color: #81CFE0;
+    p{
+      color: white;
+      font-family: montserrat;
+      font-size: 1.5em;
+      span{
+        color: inherit;
+        font-family: inherit;
+      }
+    }
+    a{
+      color: white;
+      font-family: montserrat;
+      margin-left: 10px;
+    }
+    .left, .right{
+      display: inline-block;
+    }
+    .left{
+    }
+    .right{
+      text-align: right;
+      float: right;
+    }
+  }
+  .weekdays{
+    margin: 0;
+    li{
+      color: #666666;
+      background-color: #dddddd;
+      border: none;
+    }
+    .small{
+      border: none;
+    }
+    border: none;
+  }
+  ul{
+    li{
+      display: inline-block;
+      width: 13.2857%;
+      text-align: center;
+      font-family: montserrat;
+      font-size: 1em;
+      padding: 10px 0;
+      border-right: 1px solid #dddddd;
+    }
+    .small{
+      width: 7%;
+      text-align: center;
+      padding-left: 2px;
+      padding-right: 2px;
+      border-left: 1px solid #dddddd;
+      cursor: auto;
+    }
+    background-color: white;
+    border-bottom: 1px solid #dddddd;
+  }
+  .times{
+    cursor: pointer;
+    li{
+      transition: 0.2s all;
+      &:hover{
+        background-color: $light-blue;
+      }
+    }
+    .small{
+      &:hover{
+        background-color: inherit;
+      }
+    }
+    .filled{
+      background-color: #81CFE0;
+      cursor: auto;
+      color: $white;
+      &:hover{
+        background-color: #81CFE0;
+      }
+    }
+  }
+}
+
+.popup{
+  padding: 2em 1.5em;
+  h1, h2, h3, p, input{
+    margin: 0;
+  }
+  p{
+    margin: 5px 0 15px;
+  }
+  input{
+    margin-bottom: 10px;
+  }
+  .sa-input-error.show{
+    opacity: 0;
+    display: none;
+  }
+}
+
+#body{
+  .box{
+    padding: 3em 5em 3em 5em;
+    h2{
+      font-size: 2em;
+      margin-bottom: 5px;
+    }
+    h3{
+      font-size: 1.5em;
+      margin-bottom: 5px;
+    }
+    &:nth-of-type(odd){
+      text-align: left;
+    }
+    &:nth-of-type(even){
+      text-align: right;
+      background-color: $white;
+    }
+    ol, ul{
+      text-align: left;
+      li{
+        font-family: montserrat;
+        margin-bottom: 10px;
+        a{
+          color: $blue;
+        }
+      }
+    }
+    ol{
+      list-style-type: decimal;
+      width: 60%;
+      margin: 0 auto;
+    }
+    ul{
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+  }
+  .center{
+    &:nth-of-type(odd){
+      text-align: center;
+    }
+    &:nth-of-type(even){
+      text-align: center;
+    }
+  }
+  .banner{
+    text-align: center;
+    position: relative;
+    height: 250px;
+    h2{
+      color: $gray;
+      padding-bottom: 5px;
+    }
+    .img{
+      background-image: url("../Graphics/fabric.jpg");
+    }
+    .btn{
+      color: $white;
+      &:hover{
+        color: $light-blue;
+      }
+    }
+    .btn:first-of-type{
+      border-color: $white;
+    }
+    .btn:nth-of-type(2){
+      background-color: $blue;
+      border-color: $blue;
+      margin-left: 5px;
+    }
+    padding: 0.5em;
+  }
+
+}
+
+@media screen and (max-width: 700px) {
+  #body{
+    .box{
+      ol{
+        width: 80%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #body{
+    .box{
+      ol{
+        width: 95%;
+      }
+    }
+  }
+}

@@ -1,0 +1,42 @@
+extends layout
+
+block vars
+  -var short = true;
+
+block content
+  .box.center
+    p You can use the printer <strong>whenever the library is open</strong>. Make sure you are properly trained before you use the printer.
+  #calendar
+    .month
+      .left
+        p
+          span#date1 January 1
+          | &nbsp;-&nbsp;
+          span#date2 January 7
+      .right
+    ul.weekdays
+      li.small &nbsp;&nbsp;
+      li Su
+      li Mo
+      li Tu
+      li We
+      li Th
+      li Fr
+      li Sa
+    - var hour = 8;
+    - var pm = false;
+    - var k = 0;
+    while pm == false || hour != 9.5
+      ul.times
+        li.small= Math.floor(hour) + ":" + (Math.round(hour) == Math.floor(hour) ? "00" : "30")
+        - var i = k;
+        while k < i + 7
+          li.slot.unfilled(id = k) &nbsp;&nbsp;
+          -k++;
+      - hour += 0.5;
+      if hour == 13
+        - hour = 1;
+        - pm = true;
+block scripts
+  script(src="/bower_components/chrono/chrono.min.js")
+  script(src = "dist/JS/calendar.min.js")
