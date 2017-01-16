@@ -10,7 +10,7 @@ var flash = require('connect-flash');
 var cookieParser = require('cookie-parser');
 var session = require('express-session');
 
-mongoose.connect('mongodb://localhost/adtg');
+mongoose.connect('mongodb://heroku_qcrtnbm1:sbm0vn526gdri0ssdsekoqgj3v@ds111549.mlab.com:11549/heroku_qcrtnbm1');
 var TimeSlot = require('./app/models/Slot');
 
 var app = express();
