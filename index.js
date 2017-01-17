@@ -45,8 +45,9 @@ app.get("/reserve", function(req, res){
   res.render("calendar", {successMessage: req.flash('successMessage'), errorMessage: req.flash('errorMessage')});
 });
 
-app.get("/getTimeSlots", function(req, res){
+app.get("/getTimeSlots", function(req, res, next){
   TimeSlot.find(function(err, slots){
+    if(err) return next(err);
     res.json(slots);
   });
 });
