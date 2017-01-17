@@ -69,6 +69,7 @@ app.post("/savetime", function(req, res){
 
       if(!testEmail(req.body.email)){
         req.flash('errorMessage', 'Enter a valid Andover email');
+        res.redirect("/reserve");
       }
 
       newSlot.email = req.body.email;
@@ -82,6 +83,7 @@ app.post("/savetime", function(req, res){
 
       res.redirect("/reserve");
     }
+    res.redirect("/reserve");
   });
 });
 
