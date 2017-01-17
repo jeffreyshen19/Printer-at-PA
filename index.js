@@ -12,7 +12,7 @@ var session = require('express-session');
 
 mongoose.connect('mongodb://heroku_qcrtnbm1:sbm0vn526gdri0ssdsekoqgj3v@ds111549.mlab.com:11549/heroku_qcrtnbm1');
 //mongoose.connect('mongodb://localhost/adtg');
-var TimeSlot = require('./app/models/Slot');
+var Slot = require('./app/models/Slot');
 
 var app = express();
 
@@ -46,8 +46,10 @@ app.get("/reserve", function(req, res){
 });
 
 app.get("/getTimeSlots", function(req, res, next){
-  TimeSlot.find(function(err, slots){
+  Slot.find(function(err, slots){
     if(err) return next(err);
+
+    console.log(slots);
     res.json(slots);
   });
 });
@@ -58,7 +60,7 @@ function testEmail(str){
 }
 
 app.post("/savetime", function(req, res){
-  TimeSlot.find({}, function(err, slots) {
+  Slot.find({}, function(err, slots) {
     var included = false;
     slots.forEach(function(slot){
       if(slot.time == req.body.time && slot.day == req.body.day) {
@@ -67,7 +69,7 @@ app.post("/savetime", function(req, res){
     });
     if(!included){
 
-      var newSlot = new TimeSlot();
+      var newSlot = new Slot();
 
       if(!testEmail(req.body.email)){
         req.flash('errorMessage', 'Enter a valid Andover email');
