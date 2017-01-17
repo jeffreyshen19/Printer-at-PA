@@ -46,7 +46,7 @@ app.get("/reserve", function(req, res){
 });
 
 app.get("/getTimeSlots", function(req, res){
-  TimeSlot.find({}, function(err, slots) {
+  TimeSlot.find(function(err, slots){
     res.json(slots);
   });
 });
