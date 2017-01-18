@@ -12,11 +12,11 @@ var session = require('express-session');
 
 var uri = process.env.MONGOLAB_URI || process.env.MONGOHQ_URL || 'mongodb://localhost/adtg';
 
-mongoose.connect(uristring, function(err, res) {
+mongoose.connect(uri, function(err, res) {
   if (err) {
-    console.log('ERROR connecting to: ' + uristring + '. ' + err);
+    console.log('ERROR connecting to: ' + uri + '. ' + err);
   } else {
-    console.log('Succeeded connected to: ' + uristring);
+    console.log('Succeeded connected to: ' + uri);
   }
 });
 
