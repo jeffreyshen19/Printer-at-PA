@@ -58,7 +58,6 @@ app.get("/getTimeSlots", function(req, res, next){
     if(err) return next(err);
 
     console.log(slots);
-    res.json(slots);
   });
 });
 
