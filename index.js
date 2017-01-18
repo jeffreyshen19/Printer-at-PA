@@ -10,7 +10,7 @@ var flash = require('connect-flash');
 var cookieParser = require('cookie-parser');
 var session = require('express-session');
 
-var uri = process.env.MONGOLAB_URI || process.env.MONGOHQ_URL || 'mongodb://localhost/adtg';
+var uri = process.env.MONGODB_URI || process.env.MONGOHQ_URL || 'mongodb://localhost/adtg';
 
 mongoose.connect(uri, function(err, res) {
   if (err) {
