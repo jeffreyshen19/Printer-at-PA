@@ -3,7 +3,7 @@ var mongoose = require("mongoose");
 var SlotSchema = new mongoose.Schema({
   email: String,
   time: String,
-  day: String
+  day: Date
 });
 
 var Slot = mongoose.model("Slot", SlotSchema);

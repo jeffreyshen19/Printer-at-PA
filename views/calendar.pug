@@ -14,6 +14,11 @@ block content
           | &nbsp;-&nbsp;
           span#date2 January 7
       .right
+        a#back(onclick = "backWeek()")
+          i.fa.fa-chevron-left
+        a() Today
+        a#forward(onclick = "addWeek()") &nbsp;
+          i.fa.fa-chevron-right
     ul.weekdays
       li.small &nbsp;&nbsp;
       li Su
