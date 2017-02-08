@@ -83,11 +83,28 @@ center{
       color: white;
       font-family: montserrat;
       margin-left: 10px;
+      cursor: pointer;
+      text-decoration: none;
+      &:hover{
+        color: $white;
+      }
+    }
+    .inactive{
+      color: $light-black;
+      cursor: default;
+      pointer-events: none;
+    }
+    #back{
+      margin-right: 4px;
+    }
+    #forwards{
+
     }
     .left, .right{
       display: inline-block;
     }
     .left{
+
     }
     .right{
       text-align: right;

@@ -1,19 +1,22 @@
 var monthStr = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
-function getWeek(today){
+var reference = chrono.parseDate("today");
+
+function getWeek(ref){
   var d = new Date();
 
-  var dateOne = chrono.parseDate('This Sunday', today);
-  var dateTwo = chrono.parseDate('This Saturday', today);
+  var dateOne = chrono.parseDate('This Sunday', ref);
+  var dateTwo = chrono.parseDate('This Saturday', ref);
 
-  if (d.getDay() === 0) dateOne = chrono.parseDate("Today", today);
-  if (d.getDay() === 6) dateTwo = chrono.parseDate("Today", today);
+  if (d.getDay() === 0) dateOne = chrono.parseDate("Today", ref);
+  if (d.getDay() === 6) dateTwo = chrono.parseDate("Today", ref);
 
   return {begin: dateOne, end: dateTwo};
 }
 
-$(document).ready(function() {
-  var timeObj = getWeek(chrono.parseDate("Today")), dateOne = timeObj.begin, dateTwo = timeObj.end;
+function updateDisplay(timeObj){
+  var dateOne = timeObj.begin, dateTwo = timeObj.end;
+
   var dateOneStr = monthStr[dateOne.getMonth()] + " " + dateOne.getDate(),
     dateTwoStr = "";
 
@@ -22,19 +25,35 @@ $(document).ready(function() {
   $("#date1").text(dateOneStr);
   $("#date2").text(dateTwoStr);
 
+  if(inWeek({day: chrono.parseDate("today")}, dateOne, dateTwo)) $("#back").addClass("inactive");
+  else $("#back").removeClass("inactive");
+
   $.get("/getTimeSlots", function( data ) {
     data.forEach(function(time){
       if(inWeek(time, dateOne, dateTwo)) $("#" + parseTimeObj(time)).removeClass("unfilled").addClass("filled").text(time.email.split("@")[0]);
+      else $("#" + parseTimeObj(time)).addClass("unfilled").removeClass("filled").text("");
     });
   });
+}
+
+$(document).ready(function() {
+  var timeObj = getWeek(chrono.parseDate("today"));
+  updateDisplay(timeObj);
 });
 
 function backWeek(){
-
+  reference = new Date(reference.getTime() - 604800000);
+  updateDisplay(getWeek(reference));
 }
 
 function addWeek(){
+  reference = new Date(reference.getTime() + 604800000);
+  updateDisplay(getWeek(reference));
+}
 
+function today(){
+  reference = chrono.parseDate("today");
+  updateDisplay(getWeek(reference))
 }
 
 function inWeek(timeObj, dateOne, dateTwo){
@@ -57,8 +76,8 @@ function parseTimeObj(timeObj){
 }
 
 function parseId(id) {
-  var day = chrono.parseDate("This " + dayStr[id % 7]);
-  if(new Date().getDay() == id % 7) day = chrono.parseDate("Today");
+  var day = chrono.parseDate("This " + dayStr[id % 7], reference);
+  if(new Date().getDay() == id % 7) day = chrono.parseDate("Today", reference);
 
   var time = timeStr[Math.floor(id / 7)];
 
