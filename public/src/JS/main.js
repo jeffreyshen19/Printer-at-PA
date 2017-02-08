@@ -1,7 +1,7 @@
-function toggleChat() {
+/*function toggleChat() {
   $_Tawk.toggle();
   return false;
-}
+}*/
 
 $(document).scroll(function() {
   if($(this).scrollTop() > $(window).height() * 0.1){
@@ -16,3 +16,18 @@ $(document).scroll(function() {
     });
   }
 });
+
+function select(opt){
+  if(opt === "left"){
+    $("#knowwhatyouwant").show();
+    $("#stillchoosing").hide();
+    $("#left").addClass("active");
+    $("#right").removeClass("active");
+  }
+  else{
+    $("#knowwhatyouwant").hide();
+    $("#stillchoosing").show();
+    $("#left").removeClass("active");
+    $("#right").addClass("active");
+  }
+}

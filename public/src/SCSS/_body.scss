@@ -18,6 +18,7 @@ center{
 
 .img{
   z-index: 25;
+  background-attachment: fixed;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -32,6 +33,33 @@ center{
   text-align: right;
   a{
     margin-left: 10px;
+  }
+}
+
+#toggleswitch{
+  margin: 0 auto 20px;
+  width: 400px;
+  a{
+    font-family: montserrat;
+    padding: 5px 10px;
+    text-align: center;
+    width: 200px;
+    display: inline-block;
+    background-color: $gray;
+    color: white;
+    cursor: pointer;
+    &:first-child{
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+    }
+    &:nth-child(2){
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+    }
+  }
+  .active{
+    background-color: white;
+    color: $black;
   }
 }
 
@@ -141,8 +169,17 @@ center{
 }
 
 #body{
+  #getstarted{
+    ul, ol{
+      width: 60%;
+      margin: 0 auto;
+    }
+  }
   .box{
     padding: 3em 5em 3em 5em;
+    p{
+      line-height: 1.3em;
+    }
     h2{
       font-size: 2em;
       margin-bottom: 5px;
@@ -219,7 +256,10 @@ center{
 @media screen and (max-width: 700px) {
   #body{
     .box{
-      ol{
+      padding: 2em 3em;
+    }
+    #getstarted{
+      ol, ul{
         width: 80%;
       }
     }
@@ -228,8 +268,16 @@ center{
 
 @media screen and (max-width: 500px) {
   #body{
-    .box{
-      ol{
+    #toggleswitch{
+      width: 200px;
+      a{
+        display: block;
+        border-radius: 5px;
+        width: 200px;
+      }
+    }
+    #getstarted{
+      ol, ul{
         width: 95%;
       }
     }
