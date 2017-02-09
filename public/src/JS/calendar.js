@@ -1,3 +1,5 @@
+//Client side interface
+
 var monthStr = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
 var reference = chrono.parseDate("today");
@@ -31,13 +33,21 @@ function updateDisplay(timeObj){
   $.get("/getTimeSlots", function( data ) {
     data.forEach(function(time){
       if(inWeek(time, dateOne, dateTwo)) $("#" + parseTimeObj(time)).removeClass("unfilled").addClass("filled").text(time.email.split("@")[0]);
-      else $("#" + parseTimeObj(time)).addClass("unfilled").removeClass("filled").text("");
+      else $("#" + parseTimeObj(time)).addClass("unfilled").removeClass("filled").text("\b\b");
     });
   });
 }
 
 $(document).ready(function() {
-  var timeObj = getWeek(chrono.parseDate("today"));
+  var query = location.search.substr(1);
+  var result = {};
+  query.split("&").forEach(function(part) {
+    var item = part.split("=");
+    result[item[0]] = decodeURIComponent(item[1]);
+  });
+
+  if(result.day != undefined) reference = new Date(result.day)
+  var timeObj = getWeek(chrono.parseDate("today", reference));
   updateDisplay(timeObj);
 });
 
@@ -53,7 +63,7 @@ function addWeek(){
 
 function today(){
   reference = chrono.parseDate("today");
-  updateDisplay(getWeek(reference))
+  updateDisplay(getWeek(reference));
 }
 
 function inWeek(timeObj, dateOne, dateTwo){
@@ -123,6 +133,7 @@ $(".unfilled").click(function(e) {
 
         $.post("/savetime", data, function( data ) {
           window.location.pathname = "/reserve";
+          window.location.search = "day=" + reference;
         })
         .fail(function(){
           swal("Oops!", "Something went wrong", "error");

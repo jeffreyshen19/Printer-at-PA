@@ -148,6 +148,9 @@ center{
     cursor: pointer;
     li{
       transition: 0.2s all;
+      text-overflow: ellipsis;
+      overflow-x: hidden;
+      vertical-align: top;
       &:hover{
         background-color: $light-blue;
       }

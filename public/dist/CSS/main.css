@@ -376,141 +376,144 @@ center {
 /* line 149, ../../src/SCSS/_body.scss */
 #calendar .times li {
   transition: 0.2s all;
+  text-overflow: ellipsis;
+  overflow-x: hidden;
+  vertical-align: top;
 }
-/* line 151, ../../src/SCSS/_body.scss */
+/* line 154, ../../src/SCSS/_body.scss */
 #calendar .times li:hover {
   background-color: #d8e9ef;
 }
-/* line 156, ../../src/SCSS/_body.scss */
+/* line 159, ../../src/SCSS/_body.scss */
 #calendar .times .small:hover {
   background-color: inherit;
 }
-/* line 160, ../../src/SCSS/_body.scss */
+/* line 163, ../../src/SCSS/_body.scss */
 #calendar .times .filled {
   background-color: #81CFE0;
   cursor: auto;
   color: #F2F1EF;
 }
-/* line 164, ../../src/SCSS/_body.scss */
+/* line 167, ../../src/SCSS/_body.scss */
 #calendar .times .filled:hover {
   background-color: #81CFE0;
 }
 
-/* line 171, ../../src/SCSS/_body.scss */
+/* line 174, ../../src/SCSS/_body.scss */
 .popup {
   padding: 2em 1.5em;
 }
-/* line 173, ../../src/SCSS/_body.scss */
+/* line 176, ../../src/SCSS/_body.scss */
 .popup h1, .popup h2, .popup h3, .popup p, .popup input {
   margin: 0;
 }
-/* line 176, ../../src/SCSS/_body.scss */
+/* line 179, ../../src/SCSS/_body.scss */
 .popup p {
   margin: 5px 0 15px;
 }
-/* line 179, ../../src/SCSS/_body.scss */
+/* line 182, ../../src/SCSS/_body.scss */
 .popup input {
   margin-bottom: 10px;
 }
-/* line 182, ../../src/SCSS/_body.scss */
+/* line 185, ../../src/SCSS/_body.scss */
 .popup .sa-input-error.show {
   opacity: 0;
   display: none;
 }
 
-/* line 190, ../../src/SCSS/_body.scss */
+/* line 193, ../../src/SCSS/_body.scss */
 #body #getstarted ul, #body #getstarted ol {
   width: 60%;
   margin: 0 auto;
 }
-/* line 195, ../../src/SCSS/_body.scss */
+/* line 198, ../../src/SCSS/_body.scss */
 #body .box {
   padding: 3em 5em 3em 5em;
 }
-/* line 197, ../../src/SCSS/_body.scss */
+/* line 200, ../../src/SCSS/_body.scss */
 #body .box p {
   line-height: 1.3em;
 }
-/* line 200, ../../src/SCSS/_body.scss */
+/* line 203, ../../src/SCSS/_body.scss */
 #body .box h2 {
   font-size: 2em;
   margin-bottom: 5px;
 }
-/* line 204, ../../src/SCSS/_body.scss */
+/* line 207, ../../src/SCSS/_body.scss */
 #body .box h3 {
   font-size: 1.5em;
   margin-bottom: 5px;
 }
-/* line 208, ../../src/SCSS/_body.scss */
+/* line 211, ../../src/SCSS/_body.scss */
 #body .box:nth-of-type(odd) {
   text-align: left;
 }
-/* line 211, ../../src/SCSS/_body.scss */
+/* line 214, ../../src/SCSS/_body.scss */
 #body .box:nth-of-type(even) {
   text-align: right;
   background-color: #F2F1EF;
 }
-/* line 215, ../../src/SCSS/_body.scss */
+/* line 218, ../../src/SCSS/_body.scss */
 #body .box ol, #body .box ul {
   text-align: left;
 }
-/* line 217, ../../src/SCSS/_body.scss */
+/* line 220, ../../src/SCSS/_body.scss */
 #body .box ol li, #body .box ul li {
   font-family: montserrat;
   margin-bottom: 10px;
 }
-/* line 220, ../../src/SCSS/_body.scss */
+/* line 223, ../../src/SCSS/_body.scss */
 #body .box ol li a, #body .box ul li a {
   color: #4ea1d3;
 }
-/* line 225, ../../src/SCSS/_body.scss */
+/* line 228, ../../src/SCSS/_body.scss */
 #body .box ol {
   list-style-type: decimal;
   width: 60%;
   margin: 0 auto;
 }
-/* line 230, ../../src/SCSS/_body.scss */
+/* line 233, ../../src/SCSS/_body.scss */
 #body .box ul {
   list-style-type: disc;
   padding-left: 20px;
 }
-/* line 236, ../../src/SCSS/_body.scss */
+/* line 239, ../../src/SCSS/_body.scss */
 #body .center:nth-of-type(odd) {
   text-align: center;
 }
-/* line 239, ../../src/SCSS/_body.scss */
+/* line 242, ../../src/SCSS/_body.scss */
 #body .center:nth-of-type(even) {
   text-align: center;
 }
-/* line 243, ../../src/SCSS/_body.scss */
+/* line 246, ../../src/SCSS/_body.scss */
 #body .banner {
   text-align: center;
   position: relative;
   height: 250px;
   padding: 0.5em;
 }
-/* line 247, ../../src/SCSS/_body.scss */
+/* line 250, ../../src/SCSS/_body.scss */
 #body .banner h2 {
   color: #BFBFBF;
   padding-bottom: 5px;
 }
-/* line 251, ../../src/SCSS/_body.scss */
+/* line 254, ../../src/SCSS/_body.scss */
 #body .banner .img {
   background-image: url("../Graphics/fabric.jpg");
 }
-/* line 254, ../../src/SCSS/_body.scss */
+/* line 257, ../../src/SCSS/_body.scss */
 #body .banner .btn {
   color: #F2F1EF;
 }
-/* line 256, ../../src/SCSS/_body.scss */
+/* line 259, ../../src/SCSS/_body.scss */
 #body .banner .btn:hover {
   color: #d8e9ef;
 }
-/* line 260, ../../src/SCSS/_body.scss */
+/* line 263, ../../src/SCSS/_body.scss */
 #body .banner .btn:first-of-type {
   border-color: #F2F1EF;
 }
-/* line 263, ../../src/SCSS/_body.scss */
+/* line 266, ../../src/SCSS/_body.scss */
 #body .banner .btn:nth-of-type(2) {
   background-color: #4ea1d3;
   border-color: #4ea1d3;
@@ -518,27 +521,27 @@ center {
 }
 
 @media screen and (max-width: 700px) {
-  /* line 275, ../../src/SCSS/_body.scss */
+  /* line 278, ../../src/SCSS/_body.scss */
   #body .box {
     padding: 2em 3em;
   }
-  /* line 279, ../../src/SCSS/_body.scss */
+  /* line 282, ../../src/SCSS/_body.scss */
   #body #getstarted ol, #body #getstarted ul {
     width: 80%;
   }
 }
 @media screen and (max-width: 500px) {
-  /* line 288, ../../src/SCSS/_body.scss */
+  /* line 291, ../../src/SCSS/_body.scss */
   #body #toggleswitch {
     width: 200px;
   }
-  /* line 290, ../../src/SCSS/_body.scss */
+  /* line 293, ../../src/SCSS/_body.scss */
   #body #toggleswitch a {
     display: block;
     border-radius: 5px;
     width: 200px;
   }
-  /* line 297, ../../src/SCSS/_body.scss */
+  /* line 300, ../../src/SCSS/_body.scss */
   #body #getstarted ol, #body #getstarted ul {
     width: 95%;
   }
