@@ -284,9 +284,33 @@ center{
       }
     }
   }
+  #calendar{
+    width: 90%;
+    .month{
+      .left, .right{
+        display: block;
+        text-align: center;
+      }
+      .left{
+
+      }
+      .right{
+        float: none;
+        margin-top: 10px;
+      }
+    }
+  }
+
 }
 
 @media screen and (max-width: 500px) {
+  #calendar{
+    ul{
+      li, .small{
+        width: 12.5%;
+      }
+    }
+  }
   #body{
     #toggleswitch{
       width: 200px;

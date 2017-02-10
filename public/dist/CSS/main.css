@@ -529,19 +529,39 @@ center {
   #body #getstarted ol, #body #getstarted ul {
     width: 80%;
   }
+
+  /* line 287, ../../src/SCSS/_body.scss */
+  #calendar {
+    width: 90%;
+  }
+  /* line 290, ../../src/SCSS/_body.scss */
+  #calendar .month .left, #calendar .month .right {
+    display: block;
+    text-align: center;
+  }
+  /* line 297, ../../src/SCSS/_body.scss */
+  #calendar .month .right {
+    float: none;
+    margin-top: 10px;
+  }
 }
 @media screen and (max-width: 500px) {
-  /* line 291, ../../src/SCSS/_body.scss */
+  /* line 309, ../../src/SCSS/_body.scss */
+  #calendar ul li, #calendar ul .small {
+    width: 12.5%;
+  }
+
+  /* line 315, ../../src/SCSS/_body.scss */
   #body #toggleswitch {
     width: 200px;
   }
-  /* line 293, ../../src/SCSS/_body.scss */
+  /* line 317, ../../src/SCSS/_body.scss */
   #body #toggleswitch a {
     display: block;
     border-radius: 5px;
     width: 200px;
   }
-  /* line 300, ../../src/SCSS/_body.scss */
+  /* line 324, ../../src/SCSS/_body.scss */
   #body #getstarted ol, #body #getstarted ul {
     width: 95%;
   }
