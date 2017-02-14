@@ -195,6 +195,32 @@ center{
       margin: 0 auto;
     }
   }
+  #faqs{
+    .fa{
+      float: right;
+    }
+    .rotate {
+      -webkit-transform: rotate(180deg);
+      transform: rotate(180deg);
+    }
+    ul{
+      padding: 0;
+    }
+    li{
+      list-style-type: none;
+      padding: 10px;
+      margin: 0;
+    }
+    .q{
+      cursor: pointer;
+      background-color: $light-black;
+      color: white;
+    }
+    .a{
+      display: none;
+      background-color: $white;
+    }
+  }
   .box{
     padding: 3em 5em 3em 5em;
     p{

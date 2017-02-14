@@ -14,7 +14,8 @@ module.exports = function(grunt) {
       build: {
         files: {
           'public/dist/JS/main.min.js': 'public/src/JS/main.js',
-          'public/dist/JS/calendar.min.js': 'public/src/JS/calendar.js'
+          'public/dist/JS/calendar.min.js': 'public/src/JS/calendar.js',
+          'public/dist/JS/accordion.min.js': 'public/src/JS/accordion.js',
         }
       }
     },

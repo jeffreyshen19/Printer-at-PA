@@ -9,6 +9,7 @@ var bodyParser = require("body-parser");
 var flash = require('connect-flash');
 var cookieParser = require('cookie-parser');
 var session = require('express-session');
+var chrono = require('chrono-node');
 
 var uri = process.env.MONGODB_URI || process.env.MONGOHQ_URL || 'mongodb://localhost/adtg';
 
@@ -39,6 +40,10 @@ app.set('view engine', 'pug');
 //Routes
 app.get("/", function(req, res){
   res.render("index");
+});
+
+app.get("/faqs", function(req, res){
+  res.render("faqs");
 });
 
 app.get("/resources", function(req, res){

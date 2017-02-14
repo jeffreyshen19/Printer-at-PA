@@ -30,10 +30,14 @@ function updateDisplay(timeObj){
   if(inWeek({day: chrono.parseDate("today")}, dateOne, dateTwo)) $("#back").addClass("inactive");
   else $("#back").removeClass("inactive");
 
+  for(var i = 0; i <= 188; i++){
+    $("#" + i).addClass("unfilled").removeClass("filled").text("\b\b");
+  }
+
   $.get("/getTimeSlots", function( data ) {
     data.forEach(function(time){
+      console.log(time);
       if(inWeek(time, dateOne, dateTwo)) $("#" + parseTimeObj(time)).removeClass("unfilled").addClass("filled").text(time.email.split("@")[0]);
-      else $("#" + parseTimeObj(time)).addClass("unfilled").removeClass("filled").text("\b\b");
     });
   });
 }
@@ -46,7 +50,7 @@ $(document).ready(function() {
     result[item[0]] = decodeURIComponent(item[1]);
   });
 
-  if(result.day != undefined) reference = new Date(result.day)
+  if(result.day !== undefined) reference = new Date(result.day);
   var timeObj = getWeek(chrono.parseDate("today", reference));
   updateDisplay(timeObj);
 });
