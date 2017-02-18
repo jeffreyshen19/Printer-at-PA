@@ -81,10 +81,16 @@ block content
       li Longsleeve: $12
       li Sweatshirt: $15
       li Athletic Longsleeves: $13
+    br
+    h2 Still not sure?
+    p We've already saved students $<span id = "amount"></span>
   .box.banner
     .overlay
     .img
     center
       h2 Ready?
-      a.btn(href = "/resources") Learn how to print
+      a.btn(href = "mailto:laaron@andover.edu") Contact us
       a.btn(href = "/reserve") Reserve a time
+
+block scripts
+  script(src = "dist/JS/spreadsheet.min.js")
