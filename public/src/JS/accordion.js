@@ -10,7 +10,7 @@ $(document).ready(function(){
 
     var icon = $(this).children('.fa-chevron-down');
 
-    $('.fa-chevron-down').not(icon).removeClass('rotate');
+    //$('.fa-chevron-down').not(icon).removeClass('rotate');
 
     icon.toggleClass('rotate');
 

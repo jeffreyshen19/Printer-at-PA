@@ -34,5 +34,5 @@ var jsonReturned = function (jsonData) { // or listDataReturned
 	var customInk = parseFloat(jsonData.feed.entry[i + 3].content.$t.split("$")[1]);
 	var ours = parseFloat(jsonData.feed.entry[i + 2].content.$t.split("$")[1]);
 	var saved = customInk - ours;
-	$("#amount").text(saved)
+	$("#amount").text(saved);
 };
