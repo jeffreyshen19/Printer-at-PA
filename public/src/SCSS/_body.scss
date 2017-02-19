@@ -189,6 +189,12 @@ center{
 }
 
 #body{
+  #people{
+    a{
+      cursor: pointer;
+      font-family: montserrat;
+    }
+  }
   #getstarted{
     ul, ol{
       width: 60%;

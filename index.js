@@ -46,6 +46,10 @@ app.get("/faqs", function(req, res){
   res.render("faqs");
 });
 
+app.get("/contact", function(req, res){
+  res.render("contact");
+});
+
 app.get("/resources", function(req, res){
   res.render("resources");
 });
