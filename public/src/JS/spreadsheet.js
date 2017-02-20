@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	getGoogleDataForKey("1BTB-cDt3hLKWP48zyP4sXUcLO6X5CYChgNJ8xTMGzqo");
+	getGoogleDataForKey("1Iq6Qh9LJXWWYBtWqj4Ng1DO0SpEx22mVghbQxPtiJrA");
 });
 
 
@@ -28,11 +28,9 @@ var jsonReturned = function (jsonData) { // or listDataReturned
 	for(i = 0; i < jsonData.feed.entry.length; i++){
 		var entry = jsonData.feed.entry[i].content.$t;
 
-		if(entry === "Totals") break;
+		if(entry === "Students Saved") break;
 	}
 
-	var customInk = parseFloat(jsonData.feed.entry[i + 3].content.$t.split("$")[1]);
-	var ours = parseFloat(jsonData.feed.entry[i + 2].content.$t.split("$")[1]);
-	var saved = customInk - ours;
+	var saved = jsonData.feed.entry[i + 1].content.$t.split("$")[1];
 	$("#amount").text(saved);
 };
