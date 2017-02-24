@@ -99,7 +99,6 @@ app.post("/savetime", function(req, res){
       newSlot.save(function (err) {
         if(err) req.flash('errorMessage', 'Oops! Something went wrong');
         else req.flash('successMessage', 'Time slot successfully reserved');
-        res.redirect("/reserve");
       });
     }
   });
