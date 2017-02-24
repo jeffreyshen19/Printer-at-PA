@@ -32,5 +32,9 @@ var jsonReturned = function (jsonData) { // or listDataReturned
 	}
 
 	var saved = jsonData.feed.entry[i + 1].content.$t.split("$")[1];
+
+	var startDate = new Date(2017, 0, 22);
+	var timeSpent = Math.round((Date.now() - startDate.getTime()) / 86400000);
 	$("#amount").text(saved);
+	$("#timeSpent").text(timeSpent);
 };

@@ -8,6 +8,9 @@ block header
   a.btn(href = "#about") Whoa. Tell me more
   a.btn(href = "#getstarted") Get Started
 
+block livecounter
+  p In <span id = "timeSpent"></span> days, we've already saved the students <span>$</span><span id = "amount"></span>!
+
 block content
   .box#about
     h2 About
@@ -80,8 +83,6 @@ block content
       li Sweatshirt: $15
       li Athletic Longsleeves: $13
     br
-    h2 Still not sure?
-    p We've already saved students $<span id = "amount"></span>!
   .box.banner
     .overlay
     .img

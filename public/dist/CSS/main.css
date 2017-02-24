@@ -162,42 +162,59 @@ header {
 header .img {
   background-image: url("../Graphics/Cover.jpg");
 }
-/* line 8, ../../src/SCSS/_header.scss */
+/* line 7, ../../src/SCSS/_header.scss */
+header .side {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: white;
+  font-family: montserrat;
+  z-index: 70;
+}
+/* line 14, ../../src/SCSS/_header.scss */
+header .side p {
+  color: white;
+}
+/* line 17, ../../src/SCSS/_header.scss */
+header .side span {
+  color: #BFBFBF;
+}
+/* line 22, ../../src/SCSS/_header.scss */
 header center h1 {
   font-size: 4em;
   margin-bottom: 5px;
   color: #BFBFBF;
 }
-/* line 13, ../../src/SCSS/_header.scss */
+/* line 27, ../../src/SCSS/_header.scss */
 header center p {
   color: #d8e9ef;
   font-size: 1.2em;
 }
-/* line 16, ../../src/SCSS/_header.scss */
+/* line 30, ../../src/SCSS/_header.scss */
 header center p strong {
   font-size: 1.1em;
   color: #d8e9ef;
 }
-/* line 21, ../../src/SCSS/_header.scss */
+/* line 35, ../../src/SCSS/_header.scss */
 header center .btn {
   color: #F2F1EF;
 }
-/* line 23, ../../src/SCSS/_header.scss */
+/* line 37, ../../src/SCSS/_header.scss */
 header center .btn:hover {
   color: #d8e9ef;
 }
-/* line 27, ../../src/SCSS/_header.scss */
+/* line 41, ../../src/SCSS/_header.scss */
 header center .btn:first-of-type {
   border-color: #F2F1EF;
 }
-/* line 30, ../../src/SCSS/_header.scss */
+/* line 44, ../../src/SCSS/_header.scss */
 header center .btn:nth-of-type(2) {
   background-color: #4ea1d3;
   border-color: #4ea1d3;
   margin-left: 5px;
 }
 
-/* line 38, ../../src/SCSS/_header.scss */
+/* line 52, ../../src/SCSS/_header.scss */
 .short {
   height: 40vh;
 }

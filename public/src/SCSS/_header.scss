@@ -4,6 +4,20 @@ header{
   .img{
     background-image: url("../Graphics/Cover.jpg");
   }
+  .side{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    font-family: montserrat;
+    z-index: 70;
+    p{
+      color: white;
+    }
+    span{
+      color: $gray;
+    }
+  }
   center{
     h1{
       font-size: 4em;
