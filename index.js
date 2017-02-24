@@ -10,6 +10,7 @@ var flash = require('connect-flash');
 var cookieParser = require('cookie-parser');
 var session = require('express-session');
 var chrono = require('chrono-node');
+var fs = require('fs');
 
 var uri = process.env.MONGODB_URI || process.env.MONGOHQ_URL || 'mongodb://localhost/adtg';
 
@@ -71,8 +72,7 @@ app.get("/getTimeSlots", function(req, res, next){
 });
 
 function testEmail(str){
-  var re = /^[a-z0-9._%+-]+@andover.edu$/g;
-  return re.test(str);
+  return fs.readFileSync('pdf_parser/content.txt').includes(str);
 }
 
 app.post("/savetime", function(req, res){
