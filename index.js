@@ -91,15 +91,17 @@ app.post("/savetime", function(req, res){
         req.flash('errorMessage', 'Enter a valid Andover email');
         res.redirect("/reserve");
       }
+      else{
+        newSlot.email = req.body.email;
+        newSlot.day = req.body.day;
+        newSlot.time = req.body.time;
 
-      newSlot.email = req.body.email;
-      newSlot.day = req.body.day;
-      newSlot.time = req.body.time;
-
-      newSlot.save(function (err) {
-        if(err) req.flash('errorMessage', 'Oops! Something went wrong');
-        else req.flash('successMessage', 'Time slot successfully reserved');
-      });
+        newSlot.save(function (err) {
+          if(err) req.flash('errorMessage', 'Oops! Something went wrong');
+          else req.flash('successMessage', 'Time slot successfully reserved');
+          res.redirect("/reserve");
+        });
+      }
     }
   });
 });
