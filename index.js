@@ -11,6 +11,7 @@ var cookieParser = require('cookie-parser');
 var session = require('express-session');
 var chrono = require('chrono-node');
 var fs = require('fs');
+var email = require('./app/mailer.js');
 
 var uri = process.env.MONGODB_URI || process.env.MONGOHQ_URL || 'mongodb://localhost/adtg';
 
@@ -99,6 +100,8 @@ app.post("/savetime", function(req, res){
         newSlot.save(function (err) {
           if(err) req.flash('errorMessage', 'Oops! Something went wrong');
           else req.flash('successMessage', 'Time slot successfully reserved');
+          var date = new Date(req.body.day);
+          email.send(req.body.email, req.body.time, (date.getMonth() + 1) + "/" + date.getDate() + "/" + date.getFullYear());
           res.redirect("/reserve");
         });
       }
