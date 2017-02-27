@@ -1,3 +1,6 @@
+/*jslint node: true */
+/*jslint esversion: 6 */
+
 'use strict';
 const nodemailer = require('nodemailer');
 let transporter = nodemailer.createTransport({
@@ -22,4 +25,4 @@ module.exports = {
       }
     });
   }
-}
+};

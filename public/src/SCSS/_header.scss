@@ -8,15 +8,13 @@ header{
     position: absolute;
     bottom: 20px;
     left: 20px;
-    color: white;
     font-family: montserrat;
     z-index: 70;
-    p{
-      color: white;
-    }
+    background-color: white;
     span{
-      color: $gray;
+      color: $blue;
     }
+    padding: 10px;
   }
   center{
     h1{

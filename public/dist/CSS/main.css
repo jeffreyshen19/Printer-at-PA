@@ -167,54 +167,51 @@ header .side {
   position: absolute;
   bottom: 20px;
   left: 20px;
-  color: white;
   font-family: montserrat;
   z-index: 70;
+  background-color: white;
+  padding: 10px;
 }
 /* line 14, ../../src/SCSS/_header.scss */
-header .side p {
-  color: white;
-}
-/* line 17, ../../src/SCSS/_header.scss */
 header .side span {
-  color: #BFBFBF;
+  color: #4ea1d3;
 }
-/* line 22, ../../src/SCSS/_header.scss */
+/* line 20, ../../src/SCSS/_header.scss */
 header center h1 {
   font-size: 4em;
   margin-bottom: 5px;
   color: #BFBFBF;
 }
-/* line 27, ../../src/SCSS/_header.scss */
+/* line 25, ../../src/SCSS/_header.scss */
 header center p {
   color: #d8e9ef;
   font-size: 1.2em;
 }
-/* line 30, ../../src/SCSS/_header.scss */
+/* line 28, ../../src/SCSS/_header.scss */
 header center p strong {
   font-size: 1.1em;
   color: #d8e9ef;
 }
-/* line 35, ../../src/SCSS/_header.scss */
+/* line 33, ../../src/SCSS/_header.scss */
 header center .btn {
   color: #F2F1EF;
 }
-/* line 37, ../../src/SCSS/_header.scss */
+/* line 35, ../../src/SCSS/_header.scss */
 header center .btn:hover {
   color: #d8e9ef;
 }
-/* line 41, ../../src/SCSS/_header.scss */
+/* line 39, ../../src/SCSS/_header.scss */
 header center .btn:first-of-type {
   border-color: #F2F1EF;
 }
-/* line 44, ../../src/SCSS/_header.scss */
+/* line 42, ../../src/SCSS/_header.scss */
 header center .btn:nth-of-type(2) {
   background-color: #4ea1d3;
   border-color: #4ea1d3;
   margin-left: 5px;
 }
 
-/* line 52, ../../src/SCSS/_header.scss */
+/* line 50, ../../src/SCSS/_header.scss */
 .short {
   height: 40vh;
 }
@@ -604,16 +601,24 @@ center {
   }
 
   /* line 347, ../../src/SCSS/_body.scss */
+  header .side {
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+  }
+
+  /* line 355, ../../src/SCSS/_body.scss */
   #body #toggleswitch {
     width: 200px;
   }
-  /* line 349, ../../src/SCSS/_body.scss */
+  /* line 357, ../../src/SCSS/_body.scss */
   #body #toggleswitch a {
     display: block;
     border-radius: 5px;
     width: 200px;
   }
-  /* line 356, ../../src/SCSS/_body.scss */
+  /* line 364, ../../src/SCSS/_body.scss */
   #body #getstarted ol, #body #getstarted ul {
     width: 95%;
   }
