@@ -72,6 +72,11 @@ app.get("/getTimeSlots", function(req, res, next){
   });
 });
 
+app.get("/livecounter", function(req, res){
+  res.render("livecounter");
+});
+
+
 function testEmail(str){
   return fs.readFileSync('pdf_parser/content.txt').includes(str);
 }

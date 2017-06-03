@@ -1,0 +1,151 @@
+/* line 1, ../../src/SCSS/_reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 22, ../../src/SCSS/_reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 26, ../../src/SCSS/_reset.scss */
+body {
+  line-height: 1;
+}
+
+/* line 29, ../../src/SCSS/_reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 32, ../../src/SCSS/_reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 35, ../../src/SCSS/_reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 40, ../../src/SCSS/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 44, ../../src/SCSS/_reset.scss */
+.container-fluid {
+  padding: 0;
+}
+
+/* line 47, ../../src/SCSS/_reset.scss */
+a:visited, a:focus {
+  color: inherit;
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: montserrat;
+  src: url("../../Fonts/montserrat/Montserrat-Regular.ttf");
+}
+@font-face {
+  font-family: domine;
+  src: url("../../Fonts/domine/Domine-Regular.ttf");
+}
+@font-face {
+  font-family: dominebold;
+  src: url("../../Fonts/domine/Domine-Bold.ttf");
+}
+@font-face {
+  font-family: roboto;
+  src: url("../../Fonts/roboto/RobotoSlab-Regular.ttf");
+}
+@font-face {
+  font-family: robotobold;
+  src: url("../../Fonts/roboto/RobotoSlab-Bold.ttf");
+}
+/* line 34, ../../src/SCSS/_text.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: montserrat;
+  color: #454552;
+}
+
+/* line 39, ../../src/SCSS/_text.scss */
+p, span, ul, li {
+  font-family: roboto;
+  color: #5d5d5d;
+  line-height: 1.1em;
+}
+
+/* line 45, ../../src/SCSS/_text.scss */
+strong {
+  font-family: robotobold;
+  color: #454552;
+}
+
+/* line 50, ../../src/SCSS/_text.scss */
+.btn {
+  font-family: montserrat;
+  padding: 10px 15px 10px 15px;
+  border-width: 1px;
+  border-radius: 5px;
+  border-style: solid;
+}
+
+/* line 58, ../../src/SCSS/_text.scss */
+a {
+  transition: 0.2s all;
+}
+
+/* line 4, ../../src/SCSS/livecounter.scss */
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+/* line 9, ../../src/SCSS/livecounter.scss */
+center {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 20px;
+}
+
+/* line 16, ../../src/SCSS/livecounter.scss */
+h1 {
+  font-size: 7em;
+  color: #454552;
+}
+/* line 19, ../../src/SCSS/livecounter.scss */
+h1 span {
+  color: #454552;
+}
+
+@media screen and (max-width: 550px) {
+  /* line 25, ../../src/SCSS/livecounter.scss */
+  h1 {
+    font-size: 4em;
+  }
+}

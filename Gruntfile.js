@@ -17,6 +17,7 @@ module.exports = function(grunt) {
           'public/dist/JS/calendar.min.js': 'public/src/JS/calendar.js',
           'public/dist/JS/accordion.min.js': 'public/src/JS/accordion.js',
           'public/dist/JS/spreadsheet.min.js': 'public/src/JS/spreadsheet.js',
+          'public/dist/JS/counter.min.js': 'public/src/JS/counter.js',
         }
       }
     },

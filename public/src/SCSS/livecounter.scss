@@ -1,0 +1,28 @@
+@import "reset";
+@import "text";
+
+body{
+  height: 100vh;
+  width: 100vw;
+}
+
+center{
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 20px;
+}
+
+h1{
+  font-size: 7em;
+  color: $black;
+  span{
+    color: $black;
+  }
+}
+
+@media screen and (max-width: 550px){
+  h1{
+    font-size: 4em;
+  }
+}
