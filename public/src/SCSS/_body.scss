@@ -305,6 +305,80 @@ center{
 
 }
 
+#pricing{
+  .checkbox{
+    margin-left: 5px;
+    display: inline;
+  }
+  #chooseShirt{
+    .shirtType{
+      width: 25%;
+      display: inline-block;
+      text-align: center;
+      cursor: pointer;
+      img{
+        width: 100%;
+      }
+      transition: 0.2s;
+      &:hover{
+        background-color: $white;
+      }
+    }
+    #selected{
+      background-color: $gray;
+    }
+  }
+  #chooseMaterial{
+    .radio, p{
+      display: inline;
+      width: auto;
+    }
+    p{
+      margin-left: 10px;
+    }
+  }
+  .btn{
+    background-color: $blue;
+    border-color: $blue;
+    margin-left: 5px;
+    color: $white;
+    &:hover{
+      color: $light-blue;
+    }
+  }
+  .disabled{
+    -webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+    -o-filter: blur(2px);
+    -ms-filter: blur(2px);
+    filter: blur(2px);
+  }
+  .circle{
+    border-radius: 100%;
+  }
+  #sizeDesign{
+    width: 500px;
+    height: 500px;
+    background-image: url("/Graphics/pricing/shirt.png");
+    position: relative;
+  }
+  #sizingarea{
+    border: 1px solid $black;
+    width: 50px;
+    height: 50px;
+    z-index: 70;
+    &:hover{
+      cursor: pointer;
+    }
+  }
+  #chooseMaterial.disabled, #chooseShirt.disabled .shirtType{
+    cursor: not-allowed;
+    &:hover{
+      background-color: white;
+    }
+  }
+}
+
 @media screen and (max-width: 700px) {
   #body{
     .box{
@@ -367,3 +441,15 @@ center{
     }
   }
 }
+
+.ui-resizable { position: relative;}
+.ui-resizable-handle { position: absolute;font-size: 0.1px; display: block; }
+.ui-resizable-disabled .ui-resizable-handle, .ui-resizable-autohide .ui-resizable-handle { display: none; }
+.ui-resizable-n { cursor: n-resize; height: 7px; width: 100%; top: -5px; left: 0; }
+.ui-resizable-s { cursor: s-resize; height: 7px; width: 100%; bottom: -5px; left: 0; }
+.ui-resizable-e { cursor: e-resize; width: 7px; right: -5px; top: 0; height: 100%; }
+.ui-resizable-w { cursor: w-resize; width: 7px; left: -5px; top: 0; height: 100%; }
+.ui-resizable-se { cursor: se-resize; width: 12px; height: 12px; right: 1px; bottom: 1px; }
+.ui-resizable-sw { cursor: sw-resize; width: 9px; height: 9px; left: -5px; bottom: -5px; }
+.ui-resizable-nw { cursor: nw-resize; width: 9px; height: 9px; left: -5px; top: -5px; }
+.ui-resizable-ne { cursor: ne-resize; width: 9px; height: 9px; right: -5px; top: -5px;}

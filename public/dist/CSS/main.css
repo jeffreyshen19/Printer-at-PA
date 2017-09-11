@@ -569,38 +569,122 @@ center {
   margin-left: 5px;
 }
 
+/* line 309, ../../src/SCSS/_body.scss */
+#pricing .checkbox {
+  margin-left: 5px;
+  display: inline;
+}
+/* line 314, ../../src/SCSS/_body.scss */
+#pricing #chooseShirt .shirtType {
+  width: 25%;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.2s;
+}
+/* line 319, ../../src/SCSS/_body.scss */
+#pricing #chooseShirt .shirtType img {
+  width: 100%;
+}
+/* line 323, ../../src/SCSS/_body.scss */
+#pricing #chooseShirt .shirtType:hover {
+  background-color: #F2F1EF;
+}
+/* line 327, ../../src/SCSS/_body.scss */
+#pricing #chooseShirt #selected {
+  background-color: #BFBFBF;
+}
+/* line 332, ../../src/SCSS/_body.scss */
+#pricing #chooseMaterial .radio, #pricing #chooseMaterial p {
+  display: inline;
+  width: auto;
+}
+/* line 336, ../../src/SCSS/_body.scss */
+#pricing #chooseMaterial p {
+  margin-left: 10px;
+}
+/* line 340, ../../src/SCSS/_body.scss */
+#pricing .btn {
+  background-color: #4ea1d3;
+  border-color: #4ea1d3;
+  margin-left: 5px;
+  color: #F2F1EF;
+}
+/* line 345, ../../src/SCSS/_body.scss */
+#pricing .btn:hover {
+  color: #d8e9ef;
+}
+/* line 349, ../../src/SCSS/_body.scss */
+#pricing .disabled {
+  -webkit-filter: blur(2px);
+  -moz-filter: blur(2px);
+  -o-filter: blur(2px);
+  -ms-filter: blur(2px);
+  filter: blur(2px);
+}
+/* line 356, ../../src/SCSS/_body.scss */
+#pricing .circle {
+  border-radius: 100%;
+}
+/* line 359, ../../src/SCSS/_body.scss */
+#pricing #sizeDesign {
+  width: 500px;
+  height: 500px;
+  background-image: url("/Graphics/pricing/shirt.png");
+  position: relative;
+}
+/* line 365, ../../src/SCSS/_body.scss */
+#pricing #sizingarea {
+  border: 1px solid #454552;
+  width: 50px;
+  height: 50px;
+  z-index: 70;
+}
+/* line 370, ../../src/SCSS/_body.scss */
+#pricing #sizingarea:hover {
+  cursor: pointer;
+}
+/* line 374, ../../src/SCSS/_body.scss */
+#pricing #chooseMaterial.disabled, #pricing #chooseShirt.disabled .shirtType {
+  cursor: not-allowed;
+}
+/* line 376, ../../src/SCSS/_body.scss */
+#pricing #chooseMaterial.disabled:hover, #pricing #chooseShirt.disabled .shirtType:hover {
+  background-color: white;
+}
+
 @media screen and (max-width: 700px) {
-  /* line 310, ../../src/SCSS/_body.scss */
+  /* line 384, ../../src/SCSS/_body.scss */
   #body .box {
     padding: 2em 3em;
   }
-  /* line 314, ../../src/SCSS/_body.scss */
+  /* line 388, ../../src/SCSS/_body.scss */
   #body #getstarted ol, #body #getstarted ul {
     width: 80%;
   }
 
-  /* line 319, ../../src/SCSS/_body.scss */
+  /* line 393, ../../src/SCSS/_body.scss */
   #calendar {
     width: 90%;
   }
-  /* line 322, ../../src/SCSS/_body.scss */
+  /* line 396, ../../src/SCSS/_body.scss */
   #calendar .month .left, #calendar .month .right {
     display: block;
     text-align: center;
   }
-  /* line 329, ../../src/SCSS/_body.scss */
+  /* line 403, ../../src/SCSS/_body.scss */
   #calendar .month .right {
     float: none;
     margin-top: 10px;
   }
 }
 @media screen and (max-width: 500px) {
-  /* line 341, ../../src/SCSS/_body.scss */
+  /* line 415, ../../src/SCSS/_body.scss */
   #calendar ul li, #calendar ul .small {
     width: 12.5%;
   }
 
-  /* line 347, ../../src/SCSS/_body.scss */
+  /* line 421, ../../src/SCSS/_body.scss */
   header .side {
     bottom: 10px;
     left: 50%;
@@ -608,21 +692,110 @@ center {
     width: 90%;
   }
 
-  /* line 355, ../../src/SCSS/_body.scss */
+  /* line 429, ../../src/SCSS/_body.scss */
   #body #toggleswitch {
     width: 200px;
   }
-  /* line 357, ../../src/SCSS/_body.scss */
+  /* line 431, ../../src/SCSS/_body.scss */
   #body #toggleswitch a {
     display: block;
     border-radius: 5px;
     width: 200px;
   }
-  /* line 364, ../../src/SCSS/_body.scss */
+  /* line 438, ../../src/SCSS/_body.scss */
   #body #getstarted ol, #body #getstarted ul {
     width: 95%;
   }
 }
+/* line 445, ../../src/SCSS/_body.scss */
+.ui-resizable {
+  position: relative;
+}
+
+/* line 446, ../../src/SCSS/_body.scss */
+.ui-resizable-handle {
+  position: absolute;
+  font-size: 0.1px;
+  display: block;
+}
+
+/* line 447, ../../src/SCSS/_body.scss */
+.ui-resizable-disabled .ui-resizable-handle, .ui-resizable-autohide .ui-resizable-handle {
+  display: none;
+}
+
+/* line 448, ../../src/SCSS/_body.scss */
+.ui-resizable-n {
+  cursor: n-resize;
+  height: 7px;
+  width: 100%;
+  top: -5px;
+  left: 0;
+}
+
+/* line 449, ../../src/SCSS/_body.scss */
+.ui-resizable-s {
+  cursor: s-resize;
+  height: 7px;
+  width: 100%;
+  bottom: -5px;
+  left: 0;
+}
+
+/* line 450, ../../src/SCSS/_body.scss */
+.ui-resizable-e {
+  cursor: e-resize;
+  width: 7px;
+  right: -5px;
+  top: 0;
+  height: 100%;
+}
+
+/* line 451, ../../src/SCSS/_body.scss */
+.ui-resizable-w {
+  cursor: w-resize;
+  width: 7px;
+  left: -5px;
+  top: 0;
+  height: 100%;
+}
+
+/* line 452, ../../src/SCSS/_body.scss */
+.ui-resizable-se {
+  cursor: se-resize;
+  width: 12px;
+  height: 12px;
+  right: 1px;
+  bottom: 1px;
+}
+
+/* line 453, ../../src/SCSS/_body.scss */
+.ui-resizable-sw {
+  cursor: sw-resize;
+  width: 9px;
+  height: 9px;
+  left: -5px;
+  bottom: -5px;
+}
+
+/* line 454, ../../src/SCSS/_body.scss */
+.ui-resizable-nw {
+  cursor: nw-resize;
+  width: 9px;
+  height: 9px;
+  left: -5px;
+  top: -5px;
+}
+
+/* line 455, ../../src/SCSS/_body.scss */
+.ui-resizable-ne {
+  cursor: ne-resize;
+  width: 9px;
+  height: 9px;
+  right: -5px;
+  top: -5px;
+}
+
 /* line 1, ../../src/SCSS/_footer.scss */
 footer {
   padding: 25px 25px 50px 25px;

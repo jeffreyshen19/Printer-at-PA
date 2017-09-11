@@ -72,17 +72,52 @@ block content
         | with cash or Bluecard.
   .box#pricing
     h2 Pricing
-    p
-      | Pricing subject to change. If you want a more precise cost estimate,&nbsp;
-      <a href = "/contact">contact us</a>
-      | . These are typical costs:
+    p Use the following tool to calculate the price of your shirt order (this is only an estimate, price may be subject to other factors. <a href = "mailto:laaron@andover.edu">Contact us</a> for more info): 
     br
-    ul
-      li T-Shirt: $9
-      li Longsleeve: $10
-      li Sweatshirt: $15
-      li Athletic Longsleeves: $13
+    p Number of Shirts: 
+      input.text#numOfShirts(type = "text" value = "1")
+    p Design includes white ink or is printed on a dark shirt:
+      input.checkbox#whiteInk(type = "checkbox")
+    p Printing occurs on both sides:
+      input.checkbox#doubleSided(type = "checkbox")
+    p I already have the shirts. Just charge me for ink:
+      input.checkbox#justInk(type = "checkbox")
     br
+    h3 Choose what type of shirt you want:
+    #chooseShirt
+      .shirtType(onclick = "selectShirt(0)")
+        img(src = "/Graphics/pricing/tee.png")
+        p T-Shirt
+      .shirtType(onclick = "selectShirt(1)")
+        img(src = "/Graphics/pricing/ls.png")
+        p Long Sleeve
+      .shirtType(onclick = "selectShirt(2)")
+        img(src = "/Graphics/pricing/crew.png")
+        p Crew Neck
+      .shirtType(onclick = "selectShirt(3)")
+        img(src = "/Graphics/pricing/hoodie.png")
+        p Hoodie
+    br
+    h3 Choose what material you want:
+    #chooseMaterial
+      input.radio#cotton(type = "radio" name = "material" value = "cotton") 
+      p Cotton
+      br
+      input.radio(type = "radio" name = "material" value = "fiftyfifty") 
+      p 50/50 Cotton/Poly
+      br
+      input.radio(type = "radio" name = "material" value = "triblend") 
+      p Tri-Blend
+      br
+      br
+    h3 Size your design:
+    p I have a circular design:
+      input.checkbox#circle(type = "checkbox")
+    #sizeDesign
+      #sizingarea.ui-widget-content
+    br
+    br
+    a.btn(onclick = "calculatePrice()") Estimate Price!
   .box.banner
     .overlay
     .img
@@ -90,6 +125,11 @@ block content
       h2 Ready?
       a.btn(href = "/contact") Contact us
       a.btn(href = "/reserve") Reserve a time
+  div#dpi(style="height: 1in; width: 1in; left: 100%; position: fixed; top: 100%;")
 
 block scripts
   script(src = "dist/JS/spreadsheet.min.js")
+  script(src = "https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"
+  integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E="
+  crossorigin="anonymous")
+  script(src = "dist/JS/pricing.min.js")
