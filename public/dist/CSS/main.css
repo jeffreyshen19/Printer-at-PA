@@ -678,13 +678,21 @@ center {
     margin-top: 10px;
   }
 }
+@media screen and (max-width: 600px) {
+  /* line 413, ../../src/SCSS/_body.scss */
+  #pricing #sizeDesign {
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+  }
+}
 @media screen and (max-width: 500px) {
-  /* line 415, ../../src/SCSS/_body.scss */
+  /* line 423, ../../src/SCSS/_body.scss */
   #calendar ul li, #calendar ul .small {
     width: 12.5%;
   }
 
-  /* line 421, ../../src/SCSS/_body.scss */
+  /* line 429, ../../src/SCSS/_body.scss */
   header .side {
     bottom: 10px;
     left: 50%;
@@ -692,39 +700,39 @@ center {
     width: 90%;
   }
 
-  /* line 429, ../../src/SCSS/_body.scss */
+  /* line 437, ../../src/SCSS/_body.scss */
   #body #toggleswitch {
     width: 200px;
   }
-  /* line 431, ../../src/SCSS/_body.scss */
+  /* line 439, ../../src/SCSS/_body.scss */
   #body #toggleswitch a {
     display: block;
     border-radius: 5px;
     width: 200px;
   }
-  /* line 438, ../../src/SCSS/_body.scss */
+  /* line 446, ../../src/SCSS/_body.scss */
   #body #getstarted ol, #body #getstarted ul {
     width: 95%;
   }
 }
-/* line 445, ../../src/SCSS/_body.scss */
+/* line 453, ../../src/SCSS/_body.scss */
 .ui-resizable {
   position: relative;
 }
 
-/* line 446, ../../src/SCSS/_body.scss */
+/* line 454, ../../src/SCSS/_body.scss */
 .ui-resizable-handle {
   position: absolute;
   font-size: 0.1px;
   display: block;
 }
 
-/* line 447, ../../src/SCSS/_body.scss */
+/* line 455, ../../src/SCSS/_body.scss */
 .ui-resizable-disabled .ui-resizable-handle, .ui-resizable-autohide .ui-resizable-handle {
   display: none;
 }
 
-/* line 448, ../../src/SCSS/_body.scss */
+/* line 456, ../../src/SCSS/_body.scss */
 .ui-resizable-n {
   cursor: n-resize;
   height: 7px;
@@ -733,7 +741,7 @@ center {
   left: 0;
 }
 
-/* line 449, ../../src/SCSS/_body.scss */
+/* line 457, ../../src/SCSS/_body.scss */
 .ui-resizable-s {
   cursor: s-resize;
   height: 7px;
@@ -742,7 +750,7 @@ center {
   left: 0;
 }
 
-/* line 450, ../../src/SCSS/_body.scss */
+/* line 458, ../../src/SCSS/_body.scss */
 .ui-resizable-e {
   cursor: e-resize;
   width: 7px;
@@ -751,7 +759,7 @@ center {
   height: 100%;
 }
 
-/* line 451, ../../src/SCSS/_body.scss */
+/* line 459, ../../src/SCSS/_body.scss */
 .ui-resizable-w {
   cursor: w-resize;
   width: 7px;
@@ -760,7 +768,7 @@ center {
   height: 100%;
 }
 
-/* line 452, ../../src/SCSS/_body.scss */
+/* line 460, ../../src/SCSS/_body.scss */
 .ui-resizable-se {
   cursor: se-resize;
   width: 12px;
@@ -769,7 +777,7 @@ center {
   bottom: 1px;
 }
 
-/* line 453, ../../src/SCSS/_body.scss */
+/* line 461, ../../src/SCSS/_body.scss */
 .ui-resizable-sw {
   cursor: sw-resize;
   width: 9px;
@@ -778,7 +786,7 @@ center {
   bottom: -5px;
 }
 
-/* line 454, ../../src/SCSS/_body.scss */
+/* line 462, ../../src/SCSS/_body.scss */
 .ui-resizable-nw {
   cursor: nw-resize;
   width: 9px;
@@ -787,7 +795,7 @@ center {
   top: -5px;
 }
 
-/* line 455, ../../src/SCSS/_body.scss */
+/* line 463, ../../src/SCSS/_body.scss */
 .ui-resizable-ne {
   cursor: ne-resize;
   width: 9px;
