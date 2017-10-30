@@ -33,6 +33,39 @@ block content
       li Faster: With 150-second print-times, you can be in and out with brand new shirts in minutes.
       li Cheaper: We are much cheaper than our competitors, such as CustomInk.
       li Easier: Located in the basement of the library and managed by classmates, the Printer allows for great flexibility. Never worry about ordering just the right number of items, as you can always print more. Payment is carried out by Bluecard.
+    br
+    br
+    h3 Past Orders
+    #carousel.carousel.slide(data-ride = "carousel")
+      .carousel-inner(role = "listbox")
+        .item.active
+          img.d-block.img-fluid(src = "/Graphics/past_orders/1.jpg")
+        .item
+          img.d-block.img-fluid(src = "/Graphics/past_orders/2.jpg")
+        .item
+          img.d-block.img-fluid(src = "/Graphics/past_orders/3.jpg")
+        .item
+          img.d-block.img-fluid(src = "/Graphics/past_orders/4.jpg")
+        .item
+          img.d-block.img-fluid(src = "/Graphics/past_orders/5.jpg")
+        .item
+          img.d-block.img-fluid(src = "/Graphics/past_orders/6.jpg")
+        .item
+          img.d-block.img-fluid(src = "/Graphics/past_orders/7.jpg")
+        .item
+          img.d-block.img-fluid(src = "/Graphics/past_orders/8.jpg")
+        .item
+          img.d-block.img-fluid(src = "/Graphics/past_orders/9.jpg")
+        .item
+          img.d-block.img-fluid(src = "/Graphics/past_orders/10.jpg")
+        .item
+          img.d-block.img-fluid(src = "/Graphics/past_orders/11.jpg")
+        .item
+          img.d-block.img-fluid(src = "/Graphics/past_orders/12.jpg")
+      a.carousel-control.left(href = "#carousel" role = "button" data-slide = "prev")
+        span.glyphicon.glyphicon-chevron-left
+      a.carousel-control.right(href = "#carousel" role = "button" data-slide = "next")
+        span.glyphicon.glyphicon-chevron-right
   .box#getstarted
     h2 Getting Started
     p Need Shirts? Here's how:
@@ -76,7 +109,7 @@ block content
     br
     p Number of Shirts: 
       input.text#numOfShirts(type = "text" value = "1")
-    p Design includes white ink or is printed on a dark shirt:
+    //p Design includes white ink or is printed on a dark shirt:
       input.checkbox#whiteInk(type = "checkbox")
     p Printing occurs on both sides:
       input.checkbox#doubleSided(type = "checkbox")

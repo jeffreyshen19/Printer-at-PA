@@ -63,6 +63,10 @@ center{
   }
 }
 
+#carousel.carousel{
+  width: 500px;
+}
+
 #calendar{
   width: 80%;
   margin: 0 auto;
@@ -446,6 +450,13 @@ center{
       ol, ul{
         width: 95%;
       }
+    }
+  }
+  #carousel.carousel{
+    width: 300px;
+    margin: 0 auto;
+    img{
+      width: 300px;
     }
   }
 }
