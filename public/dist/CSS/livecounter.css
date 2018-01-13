@@ -83,29 +83,33 @@ a:visited, a:focus {
   src: url("../../Fonts/roboto/RobotoSlab-Regular.ttf");
 }
 @font-face {
+  font-family: robotoitalic;
+  src: url("../../Fonts/roboto/Roboto-Italic.ttf");
+}
+@font-face {
   font-family: robotobold;
   src: url("../../Fonts/roboto/RobotoSlab-Bold.ttf");
 }
-/* line 34, ../../src/SCSS/_text.scss */
+/* line 39, ../../src/SCSS/_text.scss */
 h1, h2, h3, h4, h5, h6 {
   font-family: montserrat;
   color: #454552;
 }
 
-/* line 39, ../../src/SCSS/_text.scss */
+/* line 44, ../../src/SCSS/_text.scss */
 p, span, ul, li {
   font-family: roboto;
   color: #5d5d5d;
   line-height: 1.1em;
 }
 
-/* line 45, ../../src/SCSS/_text.scss */
+/* line 50, ../../src/SCSS/_text.scss */
 strong {
   font-family: robotobold;
   color: #454552;
 }
 
-/* line 50, ../../src/SCSS/_text.scss */
+/* line 55, ../../src/SCSS/_text.scss */
 .btn {
   font-family: montserrat;
   padding: 10px 15px 10px 15px;
@@ -114,9 +118,14 @@ strong {
   border-style: solid;
 }
 
-/* line 58, ../../src/SCSS/_text.scss */
+/* line 63, ../../src/SCSS/_text.scss */
 a {
   transition: 0.2s all;
+}
+
+/* line 67, ../../src/SCSS/_text.scss */
+.italic {
+  font-family: robotoitalic;
 }
 
 /* line 4, ../../src/SCSS/livecounter.scss */

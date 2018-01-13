@@ -83,29 +83,33 @@ a:visited, a:focus {
   src: url("../../Fonts/roboto/RobotoSlab-Regular.ttf");
 }
 @font-face {
+  font-family: robotoitalic;
+  src: url("../../Fonts/roboto/Roboto-Italic.ttf");
+}
+@font-face {
   font-family: robotobold;
   src: url("../../Fonts/roboto/RobotoSlab-Bold.ttf");
 }
-/* line 34, ../../src/SCSS/_text.scss */
+/* line 39, ../../src/SCSS/_text.scss */
 h1, h2, h3, h4, h5, h6 {
   font-family: montserrat;
   color: #454552;
 }
 
-/* line 39, ../../src/SCSS/_text.scss */
+/* line 44, ../../src/SCSS/_text.scss */
 p, span, ul, li {
   font-family: roboto;
   color: #5d5d5d;
   line-height: 1.1em;
 }
 
-/* line 45, ../../src/SCSS/_text.scss */
+/* line 50, ../../src/SCSS/_text.scss */
 strong {
   font-family: robotobold;
   color: #454552;
 }
 
-/* line 50, ../../src/SCSS/_text.scss */
+/* line 55, ../../src/SCSS/_text.scss */
 .btn {
   font-family: montserrat;
   padding: 10px 15px 10px 15px;
@@ -114,9 +118,14 @@ strong {
   border-style: solid;
 }
 
-/* line 58, ../../src/SCSS/_text.scss */
+/* line 63, ../../src/SCSS/_text.scss */
 a {
   transition: 0.2s all;
+}
+
+/* line 67, ../../src/SCSS/_text.scss */
+.italic {
+  font-family: robotoitalic;
 }
 
 /* line 1, ../../src/SCSS/_nav.scss */
@@ -658,33 +667,38 @@ center {
   background-color: white;
 }
 
+/* line 386, ../../src/SCSS/_body.scss */
+#about a {
+  color: #4ea1d3;
+}
+
 @media screen and (max-width: 700px) {
-  /* line 388, ../../src/SCSS/_body.scss */
+  /* line 392, ../../src/SCSS/_body.scss */
   #body .box {
     padding: 2em 3em;
   }
-  /* line 392, ../../src/SCSS/_body.scss */
+  /* line 396, ../../src/SCSS/_body.scss */
   #body #getstarted ol, #body #getstarted ul {
     width: 80%;
   }
 
-  /* line 397, ../../src/SCSS/_body.scss */
+  /* line 401, ../../src/SCSS/_body.scss */
   #calendar {
     width: 90%;
   }
-  /* line 400, ../../src/SCSS/_body.scss */
+  /* line 404, ../../src/SCSS/_body.scss */
   #calendar .month .left, #calendar .month .right {
     display: block;
     text-align: center;
   }
-  /* line 407, ../../src/SCSS/_body.scss */
+  /* line 411, ../../src/SCSS/_body.scss */
   #calendar .month .right {
     float: none;
     margin-top: 10px;
   }
 }
 @media screen and (max-width: 600px) {
-  /* line 417, ../../src/SCSS/_body.scss */
+  /* line 421, ../../src/SCSS/_body.scss */
   #pricing #sizeDesign {
     width: 300px;
     height: 300px;
@@ -692,12 +706,12 @@ center {
   }
 }
 @media screen and (max-width: 500px) {
-  /* line 427, ../../src/SCSS/_body.scss */
+  /* line 431, ../../src/SCSS/_body.scss */
   #calendar ul li, #calendar ul .small {
     width: 12.5%;
   }
 
-  /* line 433, ../../src/SCSS/_body.scss */
+  /* line 437, ../../src/SCSS/_body.scss */
   header .side {
     bottom: 10px;
     left: 50%;
@@ -705,49 +719,49 @@ center {
     width: 90%;
   }
 
-  /* line 441, ../../src/SCSS/_body.scss */
+  /* line 445, ../../src/SCSS/_body.scss */
   #body #toggleswitch {
     width: 200px;
   }
-  /* line 443, ../../src/SCSS/_body.scss */
+  /* line 447, ../../src/SCSS/_body.scss */
   #body #toggleswitch a {
     display: block;
     border-radius: 5px;
     width: 200px;
   }
-  /* line 450, ../../src/SCSS/_body.scss */
+  /* line 454, ../../src/SCSS/_body.scss */
   #body #getstarted ol, #body #getstarted ul {
     width: 95%;
   }
 
-  /* line 455, ../../src/SCSS/_body.scss */
+  /* line 459, ../../src/SCSS/_body.scss */
   #carousel.carousel {
     width: 300px;
     margin: 0 auto;
   }
-  /* line 458, ../../src/SCSS/_body.scss */
+  /* line 462, ../../src/SCSS/_body.scss */
   #carousel.carousel img {
     width: 300px;
   }
 }
-/* line 464, ../../src/SCSS/_body.scss */
+/* line 468, ../../src/SCSS/_body.scss */
 .ui-resizable {
   position: relative;
 }
 
-/* line 465, ../../src/SCSS/_body.scss */
+/* line 469, ../../src/SCSS/_body.scss */
 .ui-resizable-handle {
   position: absolute;
   font-size: 0.1px;
   display: block;
 }
 
-/* line 466, ../../src/SCSS/_body.scss */
+/* line 470, ../../src/SCSS/_body.scss */
 .ui-resizable-disabled .ui-resizable-handle, .ui-resizable-autohide .ui-resizable-handle {
   display: none;
 }
 
-/* line 467, ../../src/SCSS/_body.scss */
+/* line 471, ../../src/SCSS/_body.scss */
 .ui-resizable-n {
   cursor: n-resize;
   height: 7px;
@@ -756,7 +770,7 @@ center {
   left: 0;
 }
 
-/* line 468, ../../src/SCSS/_body.scss */
+/* line 472, ../../src/SCSS/_body.scss */
 .ui-resizable-s {
   cursor: s-resize;
   height: 7px;
@@ -765,7 +779,7 @@ center {
   left: 0;
 }
 
-/* line 469, ../../src/SCSS/_body.scss */
+/* line 473, ../../src/SCSS/_body.scss */
 .ui-resizable-e {
   cursor: e-resize;
   width: 7px;
@@ -774,7 +788,7 @@ center {
   height: 100%;
 }
 
-/* line 470, ../../src/SCSS/_body.scss */
+/* line 474, ../../src/SCSS/_body.scss */
 .ui-resizable-w {
   cursor: w-resize;
   width: 7px;
@@ -783,7 +797,7 @@ center {
   height: 100%;
 }
 
-/* line 471, ../../src/SCSS/_body.scss */
+/* line 475, ../../src/SCSS/_body.scss */
 .ui-resizable-se {
   cursor: se-resize;
   width: 12px;
@@ -792,7 +806,7 @@ center {
   bottom: 1px;
 }
 
-/* line 472, ../../src/SCSS/_body.scss */
+/* line 476, ../../src/SCSS/_body.scss */
 .ui-resizable-sw {
   cursor: sw-resize;
   width: 9px;
@@ -801,7 +815,7 @@ center {
   bottom: -5px;
 }
 
-/* line 473, ../../src/SCSS/_body.scss */
+/* line 477, ../../src/SCSS/_body.scss */
 .ui-resizable-nw {
   cursor: nw-resize;
   width: 9px;
@@ -810,7 +824,7 @@ center {
   top: -5px;
 }
 
-/* line 474, ../../src/SCSS/_body.scss */
+/* line 478, ../../src/SCSS/_body.scss */
 .ui-resizable-ne {
   cursor: ne-resize;
   width: 9px;

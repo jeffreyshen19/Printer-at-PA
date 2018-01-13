@@ -19,6 +19,11 @@
 }
 
 @font-face {
+  font-family: robotoitalic;
+  src: url("../../Fonts/roboto/Roboto-Italic.ttf");
+}
+
+@font-face {
   font-family: robotobold;
   src: url("../../Fonts/roboto/RobotoSlab-Bold.ttf");
 }
@@ -57,4 +62,8 @@ strong{
 
 a{
   transition: 0.2s all;
+}
+
+.italic{
+  font-family: robotoitalic;
 }
