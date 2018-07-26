@@ -100,7 +100,7 @@ h1, h2, h3, h4, h5, h6 {
 p, span, ul, li {
   font-family: roboto;
   color: #5d5d5d;
-  line-height: 1.1em;
+  line-height: 1.3em;
 }
 
 /* line 50, ../../src/SCSS/_text.scss */
@@ -164,7 +164,7 @@ nav .right a {
 
 /* line 1, ../../src/SCSS/_header.scss */
 header {
-  height: 65vh;
+  height: 100vh;
   position: relative;
 }
 /* line 4, ../../src/SCSS/_header.scss */
@@ -179,7 +179,7 @@ header .side {
   font-family: montserrat;
   z-index: 70;
   background-color: white;
-  padding: 10px;
+  padding: 15px;
 }
 /* line 14, ../../src/SCSS/_header.scss */
 header .side span {
@@ -842,17 +842,18 @@ footer {
 /* line 2, ../../src/SCSS/_footer.scss */
 footer p, footer a {
   font-family: montserrat;
+  font-size: 0.9em;
 }
-/* line 5, ../../src/SCSS/_footer.scss */
+/* line 6, ../../src/SCSS/_footer.scss */
 footer a {
   color: #454552;
 }
-/* line 7, ../../src/SCSS/_footer.scss */
+/* line 8, ../../src/SCSS/_footer.scss */
 footer a:visited, footer a:focus {
   color: #454552;
   text-decoration: none;
 }
-/* line 11, ../../src/SCSS/_footer.scss */
+/* line 12, ../../src/SCSS/_footer.scss */
 footer a:hover {
   text-decoration: none;
   color: #4ea1d3;

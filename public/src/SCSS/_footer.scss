@@ -1,8 +1,9 @@
 footer{
   p, a{
     font-family: montserrat;
+    font-size: 0.9em;
   }
-  a{
+  a{ 
     color: $black;
     &:visited, &:focus{
     	color: $black;

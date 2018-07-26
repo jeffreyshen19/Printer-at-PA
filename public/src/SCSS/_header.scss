@@ -1,5 +1,5 @@
 header{
-  height: 65vh;
+  height: 100vh;
   position: relative;
   .img{
     background-image: url("../Graphics/Cover.jpg");
@@ -14,7 +14,7 @@ header{
     span{
       color: $blue;
     }
-    padding: 10px;
+    padding: 15px;
   }
   center{
     h1{

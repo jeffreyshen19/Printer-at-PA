@@ -38,7 +38,7 @@ block content
     ul
       li Faster: With 150-second print-times, you can be in and out with brand new shirts in minutes.
       li Cheaper: We are much cheaper than our competitors, such as CustomInk.
-      li Easier: Located in the basement of the library and managed by classmates, the Printer allows for great flexibility. Never worry about ordering just the right number of items, as you can always print more. Payment is carried out by Bluecard.
+      li Easier: Located in Gelb (for the 2018-2019 school year) and managed by classmates, the Printer allows for great flexibility. Never worry about ordering just the right number of items, as you can always print more. Bluecard or cash accepted.
     br
     br
     h3 Past Orders
@@ -111,52 +111,53 @@ block content
         | with cash or Bluecard.
   .box#pricing
     h2 Pricing
-    p Use the following tool to calculate the price of your shirt order (this is only an estimate, price may be subject to other factors. <a href = "mailto:laaron@andover.edu">Contact us</a> for more info): 
-    br
-    p Number of Shirts: 
-      input.text#numOfShirts(type = "text" value = "1")
-    //p Design includes white ink or is printed on a dark shirt:
-      input.checkbox#whiteInk(type = "checkbox")
-    p Printing occurs on both sides:
-      input.checkbox#doubleSided(type = "checkbox")
-    p I already have the shirts. Just charge me for ink:
-      input.checkbox#justInk(type = "checkbox")
-    br
-    h3 Choose what type of shirt you want:
-    #chooseShirt
-      .shirtType(onclick = "selectShirt(0)")
-        img(src = "/Graphics/pricing/tee.png")
-        p T-Shirt
-      .shirtType(onclick = "selectShirt(1)")
-        img(src = "/Graphics/pricing/ls.png")
-        p Long Sleeve
-      .shirtType(onclick = "selectShirt(2)")
-        img(src = "/Graphics/pricing/crew.png")
-        p Crew Neck
-      .shirtType(onclick = "selectShirt(3)")
-        img(src = "/Graphics/pricing/hoodie.png")
-        p Hoodie
-    br
-    h3 Choose what material you want:
-    #chooseMaterial
-      input.radio#cotton(type = "radio" name = "material" value = "cotton") 
-      p Cotton
-      br
-      input.radio(type = "radio" name = "material" value = "fiftyfifty") 
-      p 50/50 Cotton/Poly
-      br
-      input.radio(type = "radio" name = "material" value = "triblend") 
-      p Tri-Blend
-      br
-      br
-    h3 Size your design:
-    p I have a circular design:
-      input.checkbox#circle(type = "checkbox")
-    #sizeDesign
-      #sizingarea.ui-widget-content
-    br
-    br
-    a.btn(onclick = "calculatePrice()") Estimate Price!
+    p We are working on creating a price calculator, but you can e-mail <a href = "mailto:lconcepcion@andover.edu">lconcepcion@andover.edu</a> for an approximation prior to ordering. We can make a more precise estimation if you provide us with a design. 
+    //- p Use the following tool to calculate the price of your shirt order (this is only an estimate, price may be subject to other factors. <a href = "mailto:laaron@andover.edu">Contact us</a> for more info): 
+    //- br
+    //- p Number of Shirts: 
+    //-   input.text#numOfShirts(type = "text" value = "1")
+    //- //p Design includes white ink or is printed on a dark shirt:
+    //-   input.checkbox#whiteInk(type = "checkbox")
+    //- p Printing occurs on both sides:
+    //-   input.checkbox#doubleSided(type = "checkbox")
+    //- p I already have the shirts. Just charge me for ink:
+    //-   input.checkbox#justInk(type = "checkbox")
+    //- br
+    //- h3 Choose what type of shirt you want:
+    //- #chooseShirt
+    //-   .shirtType(onclick = "selectShirt(0)")
+    //-     img(src = "/Graphics/pricing/tee.png")
+    //-     p T-Shirt
+    //-   .shirtType(onclick = "selectShirt(1)")
+    //-     img(src = "/Graphics/pricing/ls.png")
+    //-     p Long Sleeve
+    //-   .shirtType(onclick = "selectShirt(2)")
+    //-     img(src = "/Graphics/pricing/crew.png")
+    //-     p Crew Neck
+    //-   .shirtType(onclick = "selectShirt(3)")
+    //-     img(src = "/Graphics/pricing/hoodie.png")
+    //-     p Hoodie
+    //- br
+    //- h3 Choose what material you want:
+    //- #chooseMaterial
+    //-   input.radio#cotton(type = "radio" name = "material" value = "cotton") 
+    //-   p Cotton
+    //-   br
+    //-   input.radio(type = "radio" name = "material" value = "fiftyfifty") 
+    //-   p 50/50 Cotton/Poly
+    //-   br
+    //-   input.radio(type = "radio" name = "material" value = "triblend") 
+    //-   p Tri-Blend
+    //-   br
+    //-   br
+    //- h3 Size your design:
+    //- p I have a circular design:
+    //-   input.checkbox#circle(type = "checkbox")
+    //- #sizeDesign
+    //-   #sizingarea.ui-widget-content
+    //- br
+    //- br
+    //- a.btn(onclick = "calculatePrice()") Estimate Price!
   .box.banner
     .overlay
     .img
