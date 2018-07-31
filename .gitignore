@@ -1,3 +1,2 @@
 node_modules
-bower_components
-public/.sass_cache
+.sass_cache
