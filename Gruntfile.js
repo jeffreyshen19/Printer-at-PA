@@ -50,6 +50,15 @@ module.exports = function(grunt) {
         files: "public/src/JS/*.js",
         tasks: ['uglify']
       }
+    },
+    pug: {
+      compile: {
+        files: {
+          'contact.html': 'views/contact.pug',
+          'faqs.html': 'views/faqs.pug',
+          'index.html': 'views/index.pug',
+        }
+      }
     }
   });
 
@@ -58,6 +67,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-compass');
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-imagemin');
+  grunt.loadNpmTasks('grunt-contrib-pug');
 
-  grunt.registerTask('default', ['uglify', 'jshint', 'imagemin', 'watch', 'compass']);
+  grunt.registerTask('default', ['uglify', 'jshint', 'pug', 'imagemin', 'watch', 'compass']);
 };
