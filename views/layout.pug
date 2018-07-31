@@ -8,15 +8,15 @@ html(lang = "en")
 
     title The Printer @ PA
 
-    link(href="/bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css")
-    link(href="/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css")
-    link(href="/bower_components/sweetalert/dist/sweetalert.css" rel="stylesheet" type="text/css")
+    link(href="./bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css")
+    link(href="./bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css")
+    link(href="./bower_components/sweetalert/dist/sweetalert.css" rel="stylesheet" type="text/css")
     link(href="public/dist/CSS/main.css" rel="stylesheet" type="text/css")
     link(href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" rel="stylesheet" type="text/css")
 
-    script(src="/bower_components/jquery/dist/jquery.min.js")
-    script(src="/bower_components/bootstrap/dist/js/bootstrap.min.js")
-    script(src="/bower_components/sweetalert/dist/sweetalert.min.js")
+    script(src="./bower_components/jquery/dist/jquery.min.js")
+    script(src="./bower_components/bootstrap/dist/js/bootstrap.min.js")
+    script(src="./bower_components/sweetalert/dist/sweetalert.min.js")
 
     block vars
       -var short = false;
@@ -25,17 +25,17 @@ html(lang = "en")
       .absolute
         nav.row
           .col-xs-1.left
-            a(href = "/")
+            a(href = "./")
               i.fa.fa-home
           .col-xs-11.right
-            a(href = "/#about") About
-            a(href = "/faqs") FAQS
-            a(href = "/#pricing") Price Calculator
-            a(href = "/contact") Contact Us
+            a(href = "./#about") About
+            a(href = "./faqs") FAQS
+            a(href = "./#pricing") Price Calculator
+            a(href = "./contact") Contact Us
             a(href = "https://www.facebook.com/theprinterpa/") 
               i.fa.fa-facebook-square
-            //a(href = "/resources") Resources
-            //a(href = "/archive") Past Designs
+            //a(href = "./resources") Resources
+            //a(href = "./archive") Past Designs
       if short
         header.short
           .overlay
@@ -56,6 +56,6 @@ html(lang = "en")
         .col-xs-9.left
           p The Printer is made possible through a grant from the Abbot Academy Association.
         .col-xs-3.right
-          a(href = "/contact") Contact Us
+          a(href = "./contact") Contact Us
     block scripts
     script(src = "public/dist/JS/main.min.js")
